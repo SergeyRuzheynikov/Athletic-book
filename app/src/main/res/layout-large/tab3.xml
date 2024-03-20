@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:alpha="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="#a0515d81">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="423dp"
+            android:layout_gravity="top"
+            android:weightSum="1"
+            android:padding="@dimen/layout_padding_all">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Комплексы"
+                    android:id="@+id/textView14"
+                    android:textSize="20dp"
+                    android:textColor="@color/text_color1" />
+
+                <ExpandableListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/exlvComplexsExs" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="400dp"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/layout_padding_all"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Новый комплекс"
+                    android:id="@+id/textView16"
+                    android:textSize="20dp"
+                    android:textColor="@color/text_color1" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="169dp"
+                    android:layout_weight="0.20">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="192dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Название комплекса"
+                            android:id="@+id/textView12"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/text_color1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Выбранные упражнения"
+                            android:id="@+id/textView13"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/text_color1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/etNameComplex"
+                            android:layout_gravity="left"
+                            android:hint="введите название" />
+
+                        <ExpandableListView
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/exlvGroupsExercisesList"
+                            android:choiceMode="multipleChoice"
+                            android:footerDividersEnabled="true"
+                            android:divider="@color/divider_item"
+                            android:clickable="true"
+                            android:dividerHeight="@dimen/divider_item_height"
+                            android:longClickable="true"
+                            android:drawSelectorOnTop="true" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="Добавить Комплекс"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_bgr"
+            android:textColor="@color/button_text"
+            android:layout_weight="0.12" />
+    </LinearLayout>
+
+</LinearLayout>

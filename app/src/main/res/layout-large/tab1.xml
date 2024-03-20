@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a0515d81"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_rowWeight="0"
+            android:layout_row="0"
+            android:alpha="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:alpha="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="#92a3a005">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Длительность \n тренировки"
+                        android:id="@+id/textView21"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+
+                    <Chronometer
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/chronometer"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="30dp"
+                        android:text="Длительность" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="■ \n Окончить\n тренировку"
+                    android:id="@+id/btnEndTraining"
+                    android:background="#92e6570f"
+                    android:layout_weight="0.33" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="▶\n начать\n тренировку"
+                    android:id="@+id/btnNewTraining"
+                    android:background="#92488b23"
+                    android:layout_weight="0.33" />
+
+            </LinearLayout>
+
+            <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#aa286680">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/item_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Комплекс"
+                android:id="@+id/textView17"
+                android:layout_weight="0.7"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/text_color1" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/spComplex"
+                android:spinnerMode="dropdown"
+                android:layout_weight="0.5"
+                android:background="@color/item_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/item_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Упражнения комплекса"
+                android:id="@+id/textView18"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/text_color1" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/spExsOfComplex"
+                android:layout_weight="0.5"
+                android:background="@color/item_parent" />
+        </LinearLayout>
+
+                <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Упражнение: "
+                    android:id="@+id/textView19"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:textColor="@color/text_color1" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/tvExNow"
+                    android:layout_gravity="center_vertical|left"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/llSetParam"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:alpha="1">
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_weight="0">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/llsets"
+
+                    android:nestedScrollingEnabled="true"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/llSetsOfTrainingAndExs"
+                        android:isScrollContainer="false"
+                        android:fadeScrollbars="false"
+                        android:alpha="0.9">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

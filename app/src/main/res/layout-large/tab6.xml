@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:alpha="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="#a0515d81">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="481dp"
+            android:padding="@dimen/layout_padding_all">
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:text="Список параметров:"
+                android:id="@+id/textView"
+                android:textSize="20dp"
+                android:textColor="@color/text_color1" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvParamList"
+                android:textFilterEnabled="true"
+                android:touchscreenBlocksFocus="false"
+
+
+                android:dividerHeight="@dimen/divider_item_height"
+                android:drawSelectorOnTop="false"
+                android:divider="@color/divider_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="400dp"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:baselineAligned="false"
+                android:weightSum="1"
+                android:padding="@dimen/layout_padding_all">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Новый параметр"
+                    android:id="@+id/textView2"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/text_color1" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="1"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Название"
+                        android:id="@+id/textView3"
+                        android:textSize="15dp"
+                        android:textColor="@color/text_color1" />
+
+                    <Spinner
+                        android:layout_width="255dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spNameParam"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.18"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Мера"
+                        android:id="@+id/textView4"
+                        android:textSize="15dp"
+                        android:textColor="@color/text_color1" />
+
+                    <Spinner
+                        android:layout_width="236dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spTypeParam" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить параметр"
+            android:id="@+id/btnAddParam"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_bgr"
+            android:textColor="@color/button_text"
+            android:clickable="true"
+            android:layout_weight="0.12" />
+    </LinearLayout>
+
+</LinearLayout>

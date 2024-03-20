@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bground"
+    android:alpha="@string/alpha_bg"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:weightSum="1"
+        android:background="#a2b7be">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Длительность \n тренировки"
+                android:id="@+id/textView21"
+                android:textAlignment="center"
+                android:textSize="10dp" />
+
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/chronometer"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:text="Длительность" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="■ \n окончить\nтренировку"
+            android:id="@+id/btnEndTraining"
+            android:background="#e6570f"
+            android:layout_weight="0.33"
+            android:textSize="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="▶\n Начать\nтренировку"
+            android:id="@+id/btnNewTraining"
+            android:background="#6dd436"
+            android:layout_weight="0.33"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Комплекс"
+                android:id="@+id/textView17"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/spComplex"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Упражнения комплекса"
+                android:id="@+id/textView18"
+                android:layout_gravity="center_vertical"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/spExsOfComplex" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:weightSum="1"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Упражнение: "
+            android:id="@+id/textView19"
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tvExNow"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_weight="0.4">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/llsets"
+
+            android:nestedScrollingEnabled="false">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/horizontalScrollView"
+                android:background="#dadada"
+                android:fillViewport="false">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView5"
+                    android:background="#d1bbbb"
+                    android:scrollIndicators="right"
+                    android:scrollbarSize="5dp"
+                    android:scrollbars="vertical|horizontal">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/llSetsOfTrainingAndExs"
+                        android:background="@color/background_color" />
+                </ScrollView>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4"
+        android:background="@color/background_color"
+        android:fillViewport="false"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llSetParam"></LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

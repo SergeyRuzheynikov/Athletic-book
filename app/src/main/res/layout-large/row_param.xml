@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ce903d">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ПАРАМЕТР"
+                android:id="@+id/tv_name_param"
+                android:layout_gravity="center_vertical|top"
+                android:background="#7dacbb"
+                android:layout_marginBottom="3dp"
+                android:layout_margin="3dp"
+                android:textAlignment="center"
+                android:paddingTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/et_value_param"
+                android:layout_gravity="center_vertical|left"
+                android:background="#9caa6a"
+                android:layout_margin="3dp"
+                android:textAlignment="center"
+                android:hint="ввести"/>
+
+        </LinearLayout>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/numberPicker1"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>

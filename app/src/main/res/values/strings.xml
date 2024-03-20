@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">AthleticBook</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="tab1">Тренировка</string>
+    <string name="tab2">Дневник</string>
+    <string name="tab3">Комплексы</string>
+    <string name="tab4">Упражнения</string>
+    <string name="tab5">Мышечные группы</string>
+    <string name="tab6">Параметры</string>
+
+    <string name="item1">Item1</string>
+    <string name="item2">Item2</string>
+    <string name="item3">Item3</string>
+    <string name="item4">Item4</string>
+
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section4">Section 4</string>
+    <string name="title_section5">Section 5</string>
+    <string name="title_section6">Section 6</string>
+
+    <string name="title_section7">Section 7</string>
+    <string name="title_section8">Section 8</string>
+    <string name="title_section9">Section 9</string>
+    <string name="title_section10">Section10</string>
+
+
+    <string  name="alpha_bg">0.98</string>
+    <color name="bground">#dfdfdf</color>
+
+
+
+
+
+    <color name="bgr_info">#98AAB7</color>
+    <color name="bgr_add">#84919A</color>
+
+    <color name="text_color1">#97c9da</color>
+
+    <color name="item_parent">#6b7c87</color>
+    <color name="item_child">#b784929c</color>
+
+    <color name="item">#b7bca995</color>
+    <color name="edit">#b7c7cbce</color>
+
+
+    <color name="item_training">#5c69635c</color>
+
+
+    <color name="divider_item">#c7455d6e</color>
+    <color name="divider_child_item">#ae57646e</color>
+
+    <color name="opaque_orange">#FF8800</color>
+    <color name="translucent_orange">#80FF8800</color>
+    <color name="text_color">#97c9da</color>
+    <color name="background_color">#7e99b5</color>
+
+    <color name="button_bgr">#e6001e32</color>
+    <color name="button_bgr_click">#9a001e32</color>
+    <color name="button_text">#00FFFF</color>
+
+
+
+    <item type="id" name="text1" />
+    <item type="id" name="text2" />
+    <item type="id" name="text3" />
+</resources>

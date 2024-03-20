@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_kkgsMBeLEd60N8ipLbB6nA" name="ObjectOrientedModel_2">
+  <packagedElement xmi:type="uml:Package" xmi:id="_NfTZsNMOEeWGqPW1NAIvyQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_NikJENMOEeWGqPW1NAIvyQ" name="example">
+      <packagedElement xmi:type="uml:Package" xmi:id="_NkHoQNMOEeWGqPW1NAIvyQ" name="diman">
+        <packagedElement xmi:type="uml:Package" xmi:id="_NlF4oNMOEeWGqPW1NAIvyQ" name="tabsapp">
+          <packagedElement xmi:type="uml:Association" xmi:id="_NlW-YNMOEeWGqPW1NAIvyQ" name="association1" memberEnd="_NljLoNMOEeWGqPW1NAIvyQ _NmKPoNMOEeWGqPW1NAIvyQ" navigableOwnedEnd="_NmKPoNMOEeWGqPW1NAIvyQ">
+            <ownedEnd xmi:id="_NljLoNMOEeWGqPW1NAIvyQ" name="" visibility="public" type="_Noa5cNMOEeWGqPW1NAIvyQ" association="_NlW-YNMOEeWGqPW1NAIvyQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nl_3kNMOEeWGqPW1NAIvyQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nl7mINMOEeWGqPW1NAIvyQ"/>
+            </ownedEnd>
+            <ownedEnd xmi:id="_NmKPoNMOEeWGqPW1NAIvyQ" name="db" visibility="public" type="_N2ysoNMOEeWGqPW1NAIvyQ" association="_NlW-YNMOEeWGqPW1NAIvyQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NmcjgNMOEeWGqPW1NAIvyQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nmb8cNMOEeWGqPW1NAIvyQ"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_NmhcANMOEeWGqPW1NAIvyQ" name="association2" memberEnd="_NmiqINMOEeWGqPW1NAIvyQ _Nmm7kNMOEeWGqPW1NAIvyQ" navigableOwnedEnd="_Nmm7kNMOEeWGqPW1NAIvyQ">
+            <ownedEnd xmi:id="_NmiqINMOEeWGqPW1NAIvyQ" name="" visibility="public" type="_Noa5cNMOEeWGqPW1NAIvyQ" association="_NmhcANMOEeWGqPW1NAIvyQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NmjRMdMOEeWGqPW1NAIvyQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NmjRMNMOEeWGqPW1NAIvyQ"/>
+            </ownedEnd>
+            <ownedEnd xmi:id="_Nmm7kNMOEeWGqPW1NAIvyQ" name="mSectionsPagerAdapter" visibility="private" type="_Nyai8NMOEeWGqPW1NAIvyQ" association="_NmhcANMOEeWGqPW1NAIvyQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nmp-4NMOEeWGqPW1NAIvyQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NmpX0NMOEeWGqPW1NAIvyQ"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Noa5cNMOEeWGqPW1NAIvyQ" name="MainActivity">
+            <generalization xmi:id="_Np-_sNMOEeWGqPW1NAIvyQ" general="_O01pQNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_NqHikNMOEeWGqPW1NAIvyQ">
+                <body>MainActivity extends AppCompatActivity</body>
+              </ownedComment>
+            </generalization>
+            <ownedAttribute xmi:id="_NrpMkNMOEeWGqPW1NAIvyQ" name="db" visibility="public" isStatic="true" type="_N2ysoNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_Nr32ENMOEeWGqPW1NAIvyQ" name="LOG_TAG" visibility="public" isStatic="true" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true">
+              <ownedComment xmi:id="_NsJi4NMOEeWGqPW1NAIvyQ">
+                <body> public static final String TAG = &quot;MainActivity&quot;;</body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NsL_INMOEeWGqPW1NAIvyQ" name="mSectionsPagerAdapter" visibility="private" type="_Nyai8NMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_NsSs0NMOEeWGqPW1NAIvyQ">
+                <body>The {@link android.support.v4.view.PagerAdapter} that will provide&#xD;
+fragments for each of the sections. We use a&#xD;
+{@link FragmentPagerAdapter} derivative, which will keep every&#xD;
+loaded fragment in memory. If this becomes too memory intensive, it&#xD;
+may be best to switch to a&#xD;
+{@link android.support.v4.app.FragmentStatePagerAdapter}.&#xD;
+</body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_NsVJENMOEeWGqPW1NAIvyQ" name="mViewPager" visibility="private" type="_NsYMYNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_Nsdr8NMOEeWGqPW1NAIvyQ">
+                <body>The {@link ViewPager} that will host the section contents.&#xD;
+</body>
+              </ownedComment>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Ns8NENMOEeWGqPW1NAIvyQ" name="PlaceholderFragment">
+              <ownedComment xmi:id="_Nva5UNMOEeWGqPW1NAIvyQ">
+                <body>A placeholder fragment containing a simple view.&#xD;
+</body>
+              </ownedComment>
+              <generalization xmi:id="_NtwFYNMOEeWGqPW1NAIvyQ" general="_OxZTsNMOEeWGqPW1NAIvyQ">
+                <ownedComment xmi:id="_Nt094NMOEeWGqPW1NAIvyQ">
+                  <body>MainActivity.PlaceholderFragment extends Fragment</body>
+                </ownedComment>
+              </generalization>
+              <ownedAttribute xmi:id="_NukkwNMOEeWGqPW1NAIvyQ" name="rv1" visibility="public" isStatic="true" type="_NunBANMOEeWGqPW1NAIvyQ"/>
+              <ownedAttribute xmi:id="_NutusNMOEeWGqPW1NAIvyQ" name="rv2" visibility="public" isStatic="true" type="_NunBANMOEeWGqPW1NAIvyQ"/>
+              <ownedAttribute xmi:id="_Nu1DcNMOEeWGqPW1NAIvyQ" name="rv3" visibility="public" isStatic="true" type="_NunBANMOEeWGqPW1NAIvyQ"/>
+              <ownedAttribute xmi:id="_Nu8YMNMOEeWGqPW1NAIvyQ" name="rv4" visibility="public" isStatic="true" type="_NunBANMOEeWGqPW1NAIvyQ"/>
+              <ownedAttribute xmi:id="_NvDs8NMOEeWGqPW1NAIvyQ" name="rv5" visibility="public" isStatic="true" type="_NunBANMOEeWGqPW1NAIvyQ"/>
+              <ownedAttribute xmi:id="_NvLowNMOEeWGqPW1NAIvyQ" name="rv6" visibility="public" isStatic="true" type="_NunBANMOEeWGqPW1NAIvyQ"/>
+              <ownedAttribute xmi:id="_NvS9gNMOEeWGqPW1NAIvyQ" name="ARG_SECTION_NUMBER" visibility="private" isStatic="true" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true">
+                <ownedComment xmi:id="_NvZEINMOEeWGqPW1NAIvyQ">
+                  <body>The fragment argument representing the section number for this&#xD;
+fragment.&#xD;
+</body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_Nv0h8NMOEeWGqPW1NAIvyQ" name="PlaceholderFragment" visibility="public" bodyCondition="_NwGOwNMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_NwGOwNMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_NwhskNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Nw7VMNMOEeWGqPW1NAIvyQ" name="newInstance" visibility="public" isStatic="true" bodyCondition="_NxCC4NMOEeWGqPW1NAIvyQ">
+                <ownedComment xmi:id="_NxjnUNMOEeWGqPW1NAIvyQ">
+                  <body>Returns a new instance of this fragment for the given section&#xD;
+number.&#xD;
+</body>
+                </ownedComment>
+                <ownedRule xmi:id="_NxCC4NMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_NxDRANMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    PlaceholderFragment fragment = new PlaceholderFragment();&#xA;    Bundle args = new Bundle();&#xA;    args.putInt(ARG_SECTION_NUMBER, sectionNumber);&#xA;    fragment.setArguments(args);&#xA;    return fragment;&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_NxPeQNMOEeWGqPW1NAIvyQ" name="sectionNumber" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_Nxf88NMOEeWGqPW1NAIvyQ" name="newInstance" type="_Ns8NENMOEeWGqPW1NAIvyQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_NxlcgNMOEeWGqPW1NAIvyQ" name="onCreateView" visibility="public" bodyCondition="_NxrjINMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_NxrjINMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_NxsxQNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="                                 {&#xA;            rv1 = inflater.inflate(R.layout.tab1,container,false);&#xA;             rv2 = inflater.inflate(R.layout.tab2,container,false);&#xA;            rv3 = inflater.inflate(R.layout.tab3,container,false);&#xA;            rv4 = inflater.inflate(R.layout.tab4,container,false);&#xA;            rv5 = inflater.inflate(R.layout.tab5,container,false);&#xA;            rv6 = inflater.inflate(R.layout.tab6,container,false);&#xA;&#xA;            View rootView = inflater.inflate(R.layout.fragment_main, container, false);&#xA;            LinearLayout LLpage=(LinearLayout) rootView.findViewById(R.id.llPage);&#xA;            Bundle args = getArguments();&#xA;&#xA;            switch (args.getInt(ARG_SECTION_NUMBER)) {&#xA;                case 1: {&#xA;                    LLpage.addView(rv1);&#xA;                }  ;&#xA;                case 2: {&#xA;                    LLpage.addView(rv2);&#xA;                }  ;&#xA;                case 3: {&#xA;                    LLpage.addView(rv3);&#xA;                }  ;&#xA;                case 4: {&#xA;                    LLpage.addView(rv4);&#xA;                }  ;&#xA;                case 5: {&#xA;                    LLpage.addView(rv5);&#xA;                }  ;&#xA;                case 6: {&#xA;                    LLpage.addView(rv6);&#xA;                }  ;&#xA;&#xA;            }&#xA;&#xA;&#xA;&#xA;//            TextView textView = (TextView) rootView.findViewById(R.id.section_label);&#xA;//            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));&#xA;            return rootView;&#xA;        }&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_Nx4-gNMOEeWGqPW1NAIvyQ" name="inflater" type="_Nx_FINMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_NyA6UNMOEeWGqPW1NAIvyQ" name="container" type="_NyGZ4NMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_NyHoANMOEeWGqPW1NAIvyQ" name="savedInstanceState" type="_NyNuoNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_NyPj0NMOEeWGqPW1NAIvyQ" name="onCreateView" type="_NunBANMOEeWGqPW1NAIvyQ" direction="return"/>
+              </ownedOperation>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Nyai8NMOEeWGqPW1NAIvyQ" name="SectionsPagerAdapter">
+              <ownedComment xmi:id="_Ny1ZsNMOEeWGqPW1NAIvyQ">
+                <body>A {@link FragmentPagerAdapter} that returns a fragment corresponding to&#xD;
+one of the sections/tabs/pages.&#xD;
+</body>
+              </ownedComment>
+              <generalization xmi:id="_Nyjs4NMOEeWGqPW1NAIvyQ" general="_OyFQMNMOEeWGqPW1NAIvyQ">
+                <ownedComment xmi:id="_NypMcNMOEeWGqPW1NAIvyQ">
+                  <body>MainActivity.SectionsPagerAdapter extends FragmentPagerAdapter</body>
+                </ownedComment>
+              </generalization>
+              <ownedOperation xmi:id="_NzPpYNMOEeWGqPW1NAIvyQ" name="SectionsPagerAdapter" visibility="public" bodyCondition="_NzVwANMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_NzVwANMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_NzW-INMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    super(fm);&#xA;&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_NzdEwNMOEeWGqPW1NAIvyQ" name="fm" type="_NzikUNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_NzlAkNMOEeWGqPW1NAIvyQ" name="destroyItem" visibility="public" bodyCondition="_NzrHMNMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_NzrHMNMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_NzsVUNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;   // super.destroyItem(container, position, object);&#xA;&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_Nz2GUNMOEeWGqPW1NAIvyQ" name="container" type="_NyGZ4NMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_Nz5wsNMOEeWGqPW1NAIvyQ" name="position" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_Nz_QQNMOEeWGqPW1NAIvyQ" name="object" type="_N0GlANMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_N0HzINMOEeWGqPW1NAIvyQ" name="destroyItem" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_N0LdgNMOEeWGqPW1NAIvyQ" name="getItem" visibility="public" bodyCondition="_N0RkINMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_N0RkINMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_N0SLMNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    // getItem is called to instantiate the fragment for the given page.&#xA;    // Return a PlaceholderFragment (defined as a static inner class below).&#xA;&#xA;    switch (i) {&#xA;        case 0:&#xA;            tab1 t1 = new tab1();&#xA;            return t1;&#xA;       case 1:&#xA;            tab2 t2 = new tab2();&#xA;            return t2;&#xA;        case 2:&#xA;            tab3 t3 = new tab3();&#xA;            return t3;&#xA;        case 3:&#xA;            tab4 t4 = new tab4();&#xA;            return t4;&#xA;        case 4:&#xA;            tab5 t5 = new tab5();&#xA;            return t5;&#xA;        case 5:&#xA;            tab6 t6 = new tab6();&#xA;&#xA;&#xA;            return t6;&#xA;&#xA;         }&#xA;         return null;&#xA;&#xA;   // return PlaceholderFragment.newInstance(position + 1);&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_N0Y44NMOEeWGqPW1NAIvyQ" name="i" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_N0e_gNMOEeWGqPW1NAIvyQ" name="getItem" type="_N0g0sNMOEeWGqPW1NAIvyQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_N0ip4NMOEeWGqPW1NAIvyQ" name="getCount" visibility="public" bodyCondition="_N0owgNMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_N0owgNMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_N0pXkNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    // Show 3 total pages.&#xA;    return 6;&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_N0tpANMOEeWGqPW1NAIvyQ" name="getCount" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_N0wFQNMOEeWGqPW1NAIvyQ" name="getPageTitle" visibility="public" bodyCondition="_N02L4NMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_N02L4NMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_N02y8NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    switch (position) {&#xA;        case 0:&#xA;            return &quot;Тренировка&quot;;&#xA;        case 1:&#xA;            return &quot;Дневник&quot;;&#xA;        case 2:&#xA;            return &quot;Комплексы&quot;;&#xA;        case 3:&#xA;            return &quot;Упражнения&quot;;&#xA;        case 4:&#xA;            return &quot;Мышечные группы&quot;;&#xA;        case 5:&#xA;            return &quot;Параметры&quot;;&#xA;    }&#xA;    return null;&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_N085kNMOEeWGqPW1NAIvyQ" name="position" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_N1BLANMOEeWGqPW1NAIvyQ" name="getPageTitle" type="_N1DAMNMOEeWGqPW1NAIvyQ" direction="return"/>
+              </ownedOperation>
+            </nestedClassifier>
+            <ownedOperation xmi:id="_N1co0NMOEeWGqPW1NAIvyQ" name="onCreate" visibility="protected" bodyCondition="_N1ivcNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N1ivcNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N1j9kNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    super.onCreate(savedInstanceState);&#xA;    db = new MyDatabase(this);&#xA;&#xA;    setContentView(R.layout.activity_main);&#xA;   // AppBarLayout appBarLayout=(AppBarLayout) findViewById(R.id.appbar);&#xA;    //appBarLayout.setLayoutMode(AppBarLayout.LAYOUT_MODE_OPTICAL_BOUNDS);&#xA;&#xA;    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);&#xA;    setSupportActionBar(toolbar);&#xA;&#xA;&#xA;    // Create the adapter that will return a fragment for each of the three&#xA;    // primary sections of the activity.&#xA;    mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());&#xA;&#xA;    // Set up the ViewPager with the sections adapter.&#xA;    mViewPager = (ViewPager) findViewById(R.id.container);&#xA;    mViewPager.setAdapter(mSectionsPagerAdapter);&#xA;&#xA;    TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);&#xA;   // tabLayout.setBackgroundColor(Color.RED);// цвет панели вкладок&#xA;    tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);&#xA;    //   tabLayout.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);&#xA;&#xA;&#xA;    tabLayout.setupWithViewPager(mViewPager);&#xA;&#xA;&#xA;&#xA;    /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);&#xA;    fab.setOnClickListener(new View.OnClickListener() {&#xA;        @Override&#xA;        public void onClick(View view) {&#xA;            Snackbar.make(view, &quot;Replace with your own action&quot;, Snackbar.LENGTH_LONG)&#xA;                    .setAction(&quot;Action&quot;, null).show();&#xA;        }&#xA;    });*/&#xD;&#xA;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N1zOINMOEeWGqPW1NAIvyQ" name="savedInstanceState" type="_NyNuoNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N124gNMOEeWGqPW1NAIvyQ" name="onCreate" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N15UwNMOEeWGqPW1NAIvyQ" name="onCreateOptionsMenu" visibility="public" bodyCondition="_N1_bYNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N1_bYNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N2ACcNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    // Inflate the menu; this adds items to the action bar if it is present.&#xA;    getMenuInflater().inflate(R.menu.menu_main, menu);&#xA;    return true;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N2GJENMOEeWGqPW1NAIvyQ" name="menu" type="_N2MPsNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N2Nd0NMOEeWGqPW1NAIvyQ" name="onCreateOptionsMenu" type="_N2P6ENMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N2SWUNMOEeWGqPW1NAIvyQ" name="onOptionsItemSelected" visibility="public" bodyCondition="_N2ZrENMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N2ZrENMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N2a5MNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    // Handle action bar item clicks here. The action bar will&#xA;    // automatically handle clicks on the Home/Up button, so long&#xA;    // as you specify a parent activity in AndroidManifest.xml.&#xA;    int id = item.getItemId();&#xA;&#xA;    //noinspection SimplifiableIfStatement&#xA;    if (id == R.id.action_settings) {&#xA;        return true;&#xA;    }&#xA;&#xA;    return super.onOptionsItemSelected(item);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N2gYwNMOEeWGqPW1NAIvyQ" name="item" type="_N2mfYNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N2oUkNMOEeWGqPW1NAIvyQ" name="onOptionsItemSelected" type="_N2P6ENMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nr-jwNMOEeWGqPW1NAIvyQ" name="String"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NsYMYNMOEeWGqPW1NAIvyQ" name="ViewPager"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NunBANMOEeWGqPW1NAIvyQ" name="View"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NxeHwNMOEeWGqPW1NAIvyQ" name="int"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Nx_FINMOEeWGqPW1NAIvyQ" name="LayoutInflater"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NyGZ4NMOEeWGqPW1NAIvyQ" name="ViewGroup"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NyNuoNMOEeWGqPW1NAIvyQ" name="Bundle"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_NzikUNMOEeWGqPW1NAIvyQ" name="FragmentManager"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N0GlANMOEeWGqPW1NAIvyQ" name="Object"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N0JoUNMOEeWGqPW1NAIvyQ" name="void"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N0g0sNMOEeWGqPW1NAIvyQ" name="Fragment"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N1DAMNMOEeWGqPW1NAIvyQ" name="CharSequence"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N2MPsNMOEeWGqPW1NAIvyQ" name="Menu"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N2P6ENMOEeWGqPW1NAIvyQ" name="boolean"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N2mfYNMOEeWGqPW1NAIvyQ" name="MenuItem"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_N2ysoNMOEeWGqPW1NAIvyQ" name="MyDatabase">
+            <generalization xmi:id="_N28doNMOEeWGqPW1NAIvyQ" general="_OqidwNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N3B9MNMOEeWGqPW1NAIvyQ">
+                <body>MyDatabase extends SQLiteAssetHelper</body>
+              </ownedComment>
+            </generalization>
+            <ownedAttribute xmi:id="_N3eCENMOEeWGqPW1NAIvyQ" name="LOG_TAG" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_N3iTgNMOEeWGqPW1NAIvyQ" name="params" visibility="public" isStatic="true" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_N3q2YNMOEeWGqPW1NAIvyQ" name="dbb" visibility="public" type="_N3tSoNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N3yyMNMOEeWGqPW1NAIvyQ">
+                <body> static public ListAdapter lstAdaper;</body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_N311gNMOEeWGqPW1NAIvyQ" name="con" visibility="public" type="_N34RwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_N3_mgNMOEeWGqPW1NAIvyQ" name="DATABASE_NAME" visibility="private" isStatic="true" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_N4G7QNMOEeWGqPW1NAIvyQ" name="DATABASE_VERSION" visibility="private" isStatic="true" type="_NxeHwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_N4O3ENMOEeWGqPW1NAIvyQ" name="COLUMN_ID" visibility="public" isStatic="true" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedOperation xmi:id="_N5UcMNMOEeWGqPW1NAIvyQ" name="MyDatabase" visibility="public" bodyCondition="_N5ai0NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N5ai0NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N5cYANMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    super(context, DATABASE_NAME, null, DATABASE_VERSION);&#xA;&#xA;    dbb = getReadableDatabase();&#xA;    con=context;&#xA;&#xA;    // you can use an alternate constructor to specify a database location&#xA;    // (such as a folder on the sd card)&#xA;    // you must ensure that this folder is available and you have permission&#xA;    // to write to it&#xA;    //super(context, DATABASE_NAME, context.getExternalFilesDir(null).getAbsolutePath(), null, DATABASE_VERSION);&#xA;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N5h3kNMOEeWGqPW1NAIvyQ" name="context" type="_N34RwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N5pMUNMOEeWGqPW1NAIvyQ" name="addNewTraining" visibility="public" bodyCondition="_N5v6ANMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N6IUgNMOEeWGqPW1NAIvyQ">
+                <body>======создание тренировки==========</body>
+              </ownedComment>
+              <ownedRule xmi:id="_N5v6ANMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N5xIINMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{ContentValues cv = new ContentValues();&#xA;    cv.put(&quot;date_tr&quot;,date_tr);&#xA;    cv.put(&quot;start_time_training&quot;,start_time);&#xA;    dbb.insert(&quot;Training&quot;, null, cv);//создание записи об упражнении&#xA;    // Ex_Params связь упражнения с параметрами&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N55D8NMOEeWGqPW1NAIvyQ" name="date_tr" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N5_xoNMOEeWGqPW1NAIvyQ" name="start_time" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N6GfUNMOEeWGqPW1NAIvyQ" name="addNewTraining" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N6KwwNMOEeWGqPW1NAIvyQ" name="endTraining" visibility="public" bodyCondition="_N6SFgNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N6SFgNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N6SskNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{ContentValues cv = new ContentValues();&#xA;    cv.put(&quot;end_time_training&quot;,end_time);&#xA;   // dbb.insert(&quot;Exercises&quot;, null, cv);//создание записи об упражнении&#xA;   ////   String where =&quot;((date_tr&quot; + &quot;=&quot; + date_tr+&quot;)and(start_time_training=&quot;+start_time+&quot;))&quot;;&#xA;    // Обновите строку с указанным индексом, используя новые значения.&#xA;   //// dbb.update(&quot;Training&quot;, cv, where, null);&#xA;    dbb.update(&quot;Training&quot;,cv, &quot;date_tr = ? AND start_time_training=?&quot;,&#xA;            new String[] {date_tr,start_time});&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N6dEoNMOEeWGqPW1NAIvyQ" name="date_tr" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N6gH8NMOEeWGqPW1NAIvyQ" name="start_time" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N6jLQNMOEeWGqPW1NAIvyQ" name="end_time" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N6p48NMOEeWGqPW1NAIvyQ" name="endTraining" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N6s8QNMOEeWGqPW1NAIvyQ" name="addSet" visibility="public" bodyCondition="_N6zp8NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N6zp8NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N604ENMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{ContentValues cv = new ContentValues();&#xA;&#xA;    String comments=&quot;nocomments&quot;;&#xA;    cv.put(&quot;id_training&quot;,id_training);&#xA;    cv.put(&quot;id_exs&quot;,id_exs);&#xA;    cv.put(&quot;num&quot;,number);&#xA;    cv.put(&quot;comments&quot;,comments);&#xA;    dbb.insert(&quot;Sets_tr&quot;, null, cv);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N7BFUNMOEeWGqPW1NAIvyQ" name="id_training" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N7K2UNMOEeWGqPW1NAIvyQ" name="number" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N7RkANMOEeWGqPW1NAIvyQ" name="id_exs" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N7YRsNMOEeWGqPW1NAIvyQ" name="addSet" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N7at8NMOEeWGqPW1NAIvyQ" name="addResultOfSet" visibility="public" bodyCondition="_N7hboNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N7hboNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N7ipwNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{ContentValues cv = new ContentValues();&#xA;    cv.put(&quot;id_set&quot;,id_set);&#xA;    cv.put(&quot;id_param&quot;,id_param);&#xA;    cv.put(&quot;res&quot;,res);&#xA;    dbb.insert(&quot;Results&quot;, null, cv);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N7tB0NMOEeWGqPW1NAIvyQ" name="id_set" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N7zIcNMOEeWGqPW1NAIvyQ" name="id_param" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N752INMOEeWGqPW1NAIvyQ" name="res" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N8Aj0NMOEeWGqPW1NAIvyQ" name="addResultOfSet" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N8EOMNMOEeWGqPW1NAIvyQ" name="getResultsOfSetAndParam" visibility="public" bodyCondition="_N8Li8NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N8Li8NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N8MxENMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    Log.d(LOG_TAG, &quot;---RESULT DBB:-&quot; + id_set + &quot; &quot; + id_param + &quot;  &quot;);&#xA;    SQLiteDatabase db = getReadableDatabase();&#xA;    SQLiteQueryBuilder qb = new SQLiteQueryBuilder();&#xA;&#xA;    String[] sqlSelect = {&quot;Results._id&quot;,&quot;Results.res&quot;,&quot;Results.id_set&quot;,&quot;Results.id_param&quot;};&#xA;&#xA;&#xA;&#xA;    Cursor c;&#xA;    c= dbb.query(&quot;Results&quot;,sqlSelect , &quot;(id_set&quot; + &quot; = &quot;+ id_set+&quot;)AND(id_param&quot;+&quot; = &quot;+id_param+&quot;)&quot;, null, null, null, &quot;Results._id&quot;);&#xA;    Log.d(LOG_TAG, &quot;---RESULT DBB GOOD:-&quot; + id_set + &quot; &quot; + id_param + &quot;  &quot;);&#xA;    c.moveToFirst();&#xA;&#xA;    return c;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N8VT8NMOEeWGqPW1NAIvyQ" name="id_set" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N8Y-UNMOEeWGqPW1NAIvyQ" name="id_param" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N8cBoNMOEeWGqPW1NAIvyQ" name="getResultsOfSetAndParam" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N8ed4NMOEeWGqPW1NAIvyQ" name="getSetsOfTraining" visibility="public" bodyCondition="_N8kkgNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N8kkgNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N8lyoNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;&#xA;    SQLiteDatabase db = getReadableDatabase();&#xA;    SQLiteQueryBuilder qb = new SQLiteQueryBuilder();&#xA;&#xA;    String[] sqlSelect = {&quot;Sets_tr._id&quot;,&quot;Sets_tr.num&quot;,&quot;Sets_tr.comments&quot;,&quot;Sets_tr.id_exs&quot;,&quot;Sets_tr.id_training&quot;};&#xA;&#xA;&#xA;&#xA;    Cursor c;&#xA;    c= dbb.query(&quot;Sets_tr&quot;,sqlSelect , &quot;(Sets_tr.id_training&quot; + &quot; = &quot;+ id_training+&quot;)AND(Sets_tr.id_exs&quot;+&quot; = &quot;+id_exs+&quot;)&quot;, null, null, null, &quot;Sets_tr._id&quot;);&#xA;    c.moveToFirst();&#xA;&#xA;    return c;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N8tucNMOEeWGqPW1NAIvyQ" name="id_training" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N8wxwNMOEeWGqPW1NAIvyQ" name="id_exs" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N80cINMOEeWGqPW1NAIvyQ" name="getSetsOfTraining" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N824YNMOEeWGqPW1NAIvyQ" name="getTrainings" visibility="public" bodyCondition="_N89mENMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N9ETwNMOEeWGqPW1NAIvyQ">
+                <body>===========конец тренировки===============</body>
+              </ownedComment>
+              <ownedRule xmi:id="_N89mENMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N8-NINMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;&#xA;    SQLiteDatabase db = getReadableDatabase();&#xA;    SQLiteQueryBuilder qb = new SQLiteQueryBuilder();&#xA;&#xA;    String[] sqlSelect = {&quot;_id&quot;,&quot;date_tr&quot;,&quot;start_time_training&quot;,&quot;end_time_training&quot;,&quot;comments&quot;};&#xA;    String sqlTables = &quot;Training&quot;;&#xA;&#xA;    qb.setTables(sqlTables);&#xA;&#xA;    Cursor c = qb.query(db, sqlSelect, null, null,&#xA;            null, null, null);&#xA;&#xA;    c.moveToFirst();&#xA;&#xA;    return c;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N9B3gNMOEeWGqPW1NAIvyQ" name="getTrainings" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N9GI8NMOEeWGqPW1NAIvyQ" name="getParamsList" visibility="public" bodyCondition="_N9NdsNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N9UycNMOEeWGqPW1NAIvyQ">
+                <body>=================работа со списком параметров...============&#xD;
+запрос списка всех параметров</body>
+              </ownedComment>
+              <ownedRule xmi:id="_N9NdsNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N9Or0NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;&#xA;    SQLiteDatabase db = getReadableDatabase();&#xA;    SQLiteQueryBuilder qb = new SQLiteQueryBuilder();&#xA;&#xA;    String[] sqlSelect = {&quot;_id&quot;,&quot;param&quot;,&quot;type_par&quot;};&#xA;    String sqlTables = &quot;Params&quot;;&#xA;&#xA;    qb.setTables(sqlTables);&#xA;&#xA;    Cursor c = qb.query(db, sqlSelect, null, null,&#xA;            null, null, null);&#xA;&#xA;    c.moveToFirst();&#xA;&#xA;    return c;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N9SWMNMOEeWGqPW1NAIvyQ" name="getParamsList" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N9WAkNMOEeWGqPW1NAIvyQ" name="addParam" visibility="public" bodyCondition="_N9cuQNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N91v0NMOEeWGqPW1NAIvyQ">
+                <body>добавление нового параметра</body>
+              </ownedComment>
+              <ownedRule xmi:id="_N9cuQNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N9dVUNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{ContentValues cv = new ContentValues();&#xA;&#xA;    cv.put(&quot;param&quot;,np);&#xA;    cv.put(&quot;type_par&quot;,tp);&#xA;    dbb.insert(&quot;Params&quot;, null, cv);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N9l4MNMOEeWGqPW1NAIvyQ" name="np" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N9sl4NMOEeWGqPW1NAIvyQ" name="tp" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N9zTkNMOEeWGqPW1NAIvyQ" name="addParam" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N93lANMOEeWGqPW1NAIvyQ" name="delParam" visibility="public" bodyCondition="_N-AH4NMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N-R0sNMOEeWGqPW1NAIvyQ">
+                <body>удаление параметра упражнения</body>
+              </ownedComment>
+              <ownedRule xmi:id="_N-AH4NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N-BWANMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{   int delCount = dbb.delete(&quot;Params&quot;, &quot;_id = &quot; + id, null);&#xA;    Log.d(&quot;mylogs&quot;, &quot;--- Удален параметр с id: &quot; + id);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N-IDsNMOEeWGqPW1NAIvyQ" name="id" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N-PYcNMOEeWGqPW1NAIvyQ" name="delParam" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N-TC0NMOEeWGqPW1NAIvyQ" name="getExsOfMgroups" visibility="public" bodyCondition="_N-ZwgNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N-qPMNMOEeWGqPW1NAIvyQ">
+                <body>=================...работа со списком параметров============&#xD;
+=================работа с упражнениями...============&#xD;
+ данные по упражнениям конкретной группы</body>
+              </ownedComment>
+              <ownedRule xmi:id="_N-ZwgNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N-a-oNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    String[] sqlSelect = {&quot;_id&quot;,&quot;name&quot;,&quot;id_mgroup&quot;};&#xA;    return dbb.query(&quot;Exercises&quot;,sqlSelect , &quot;id_mgroup&quot; + &quot; = &quot;+ id_mgroup, null, null, null, &quot;_id&quot;);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N-geMNMOEeWGqPW1NAIvyQ" name="id_mgroup" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N-ny8NMOEeWGqPW1NAIvyQ" name="getExsOfMgroups" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N-tSgNMOEeWGqPW1NAIvyQ" name="getExsOfId" visibility="public" bodyCondition="_N-0AMNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_N-0AMNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N-1OUNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    String[] sqlSelect = {&quot;_id&quot;,&quot;name&quot;,&quot;id_mgroup&quot;};&#xA;    return dbb.query(&quot;Exercises&quot;,sqlSelect , &quot;_id&quot; + &quot; = &quot;+ id_ex, null, null, null, &quot;_id&quot;);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N-6t4NMOEeWGqPW1NAIvyQ" name="id_ex" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N_CCoNMOEeWGqPW1NAIvyQ" name="getExsOfId" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N_FF8NMOEeWGqPW1NAIvyQ" name="addExercise" visibility="public" bodyCondition="_N_LMkNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N_gjwNMOEeWGqPW1NAIvyQ">
+                <body>добавление нового упражнения</body>
+              </ownedComment>
+              <ownedRule xmi:id="_N_LMkNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N_MasNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{ContentValues cv = new ContentValues();&#xA;    cv.put(&quot;name&quot;,name);&#xA;    cv.put(&quot;id_mgroup&quot;, id_mgroup);&#xA;    dbb.insert(&quot;Exercises&quot;, null, cv);//создание записи об упражнении&#xA;    // Ex_Params связь упражнения с параметрами&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N_TvcNMOEeWGqPW1NAIvyQ" name="name" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N_adINMOEeWGqPW1NAIvyQ" name="id_mgroup" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N_eukNMOEeWGqPW1NAIvyQ" name="addExercise" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N_iY8NMOEeWGqPW1NAIvyQ" name="delExercise" visibility="public" bodyCondition="_N_qUwNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_N_4XMNMOEeWGqPW1NAIvyQ">
+                <body>удаление  упражнения</body>
+              </ownedComment>
+              <ownedRule xmi:id="_N_qUwNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_N_ri4NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{   int delCount = dbb.delete(&quot;Exercises&quot;, &quot;_id = &quot; + id, null);&#xA;    Log.d(&quot;mylogs&quot;, &quot;--- Удалено упражнение с id: &quot; + id);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_N_y3oNMOEeWGqPW1NAIvyQ" name="id" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_N_168NMOEeWGqPW1NAIvyQ" name="delExercise" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_N_5lUNMOEeWGqPW1NAIvyQ" name="getExsOfTrainings" visibility="public" bodyCondition="_OAA6ENMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OAA6ENMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OACIMNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    String[] sqlSelect = {&quot;Exercises._id&quot;,&quot;Exercises.name&quot;,&quot;COUNT(*)&quot;};&#xA;&#xA;    return dbb.query(&quot;Exercises, Sets_tr&quot;,sqlSelect , &quot;(Sets_tr.id_training&quot; + &quot; = &quot;+ id_training+&quot;)AND(Sets_tr.id_exs=Exercises._id)&quot;,null,&quot;Exercises._id&quot; , null, &quot;Sets_tr._id&quot;);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OAI14NMOEeWGqPW1NAIvyQ" name="id_training" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OAL5MNMOEeWGqPW1NAIvyQ" name="getExsOfTrainings" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OAOVcNMOEeWGqPW1NAIvyQ" name="getComplexesList" visibility="public" bodyCondition="_OAVDINMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OAcX4NMOEeWGqPW1NAIvyQ">
+                <body>====================...работа с упражнениями===============&#xD;
+запрос списка всех комплексов</body>
+              </ownedComment>
+              <ownedRule xmi:id="_OAVDINMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OAWRQNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    SQLiteDatabase db = getReadableDatabase();&#xA;    SQLiteQueryBuilder qb = new SQLiteQueryBuilder();&#xA;    String[] sqlSelect = {&quot;_id&quot;,&quot;name&quot;};&#xA;    String sqlTables = &quot;Complexes&quot;;&#xA;    qb.setTables(sqlTables);&#xA;    Cursor c = qb.query(db, sqlSelect, null, null, null, null, null);&#xA;    c.moveToFirst();&#xA;    return c;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OAZ7oNMOEeWGqPW1NAIvyQ" name="getComplexesList" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OAdmANMOEeWGqPW1NAIvyQ" name="getExsOfComplexes" visibility="public" bodyCondition="_OAmI4NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OAmI4NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OAmv8NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    String[] sqlSelect = {&quot;Exercises._id&quot;,&quot;Exercises.name&quot;};&#xA;    //return dbb.query(&quot;Exercises, Ex_Complex&quot;,sqlSelect , &quot;(Ex_Complex.id_complex&quot; + &quot; = &quot;+ complexID+&quot;)AND(id_exs=Exercises._id)&quot;+&quot; &quot;, null, null, null, &quot;Exercises._id&quot;);/*AND(id_exs=Exercises._id)*/&#xA;    return dbb.query(&quot;Exercises, Ex_Complex&quot;,sqlSelect , &quot;(Ex_Complex.id_complex&quot; + &quot; = &quot;+ complexID+&quot;)AND(id_exs=Exercises._id)&quot;+&quot; &quot;, null, null, null, &quot;Exercises._id&quot;);/*AND(id_exs=Exercises._id)*/&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OAs2kNMOEeWGqPW1NAIvyQ" name="complexID" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OA1ZcNMOEeWGqPW1NAIvyQ" name="getExsOfComplexes" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OA31sNMOEeWGqPW1NAIvyQ" name="getParamsOfEx" visibility="public" bodyCondition="_OA_KcNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OA_KcNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OBAYkNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    String[] sqlSelect = {&quot;Params._id&quot;,&quot;Params.param&quot;,&quot;Params.type_par&quot;};&#xA;    //return dbb.query(&quot;Exercises, Ex_Complex&quot;,sqlSelect , &quot;(Ex_Complex.id_complex&quot; + &quot; = &quot;+ complexID+&quot;)AND(id_exs=Exercises._id)&quot;+&quot; &quot;, null, null, null, &quot;Exercises._id&quot;);/*AND(id_exs=Exercises._id)*/&#xA;    return dbb.query(&quot;Params, Ex_Params&quot;,sqlSelect , &quot;(Ex_Params.id_exs&quot; + &quot; = &quot;+ exID+&quot;)AND(id_param=Params._id)&quot;+&quot; &quot;, null, null, null, &quot;Params._id&quot;);/*AND(id_exs=Exercises._id)*/&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OBHGQNMOEeWGqPW1NAIvyQ" name="exID" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OBPCENMOEeWGqPW1NAIvyQ" name="getParamsOfEx" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OBSFYNMOEeWGqPW1NAIvyQ" name="getMgroupsList" visibility="public" bodyCondition="_OBaoQNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OBjyMNMOEeWGqPW1NAIvyQ">
+                <body>**********************************************************&#xD;
+запрос списка всех мышечных групп</body>
+              </ownedComment>
+              <ownedRule xmi:id="_OBaoQNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OBdEgNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    SQLiteDatabase db = getReadableDatabase();&#xA;    SQLiteQueryBuilder qb = new SQLiteQueryBuilder();&#xA;    String[] sqlSelect = {&quot;_id&quot;,&quot;name&quot;};&#xA;    String sqlTables = &quot;Mgroups&quot;;&#xA;    qb.setTables(sqlTables);&#xA;    Cursor c = qb.query(db, sqlSelect, null, null, null, null, null);&#xA;    c.moveToFirst();&#xA;    return c;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OBhV8NMOEeWGqPW1NAIvyQ" name="getMgroupsList" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OBlAUNMOEeWGqPW1NAIvyQ" name="delMgroup" visibility="public" bodyCondition="_OBtjMNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OBtjMNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OBuxUNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{   int delCount = dbb.delete(&quot;Mgroups&quot;, &quot;_id = &quot; + id, null);&#xA;    Log.d(&quot;mylogs&quot;, &quot;--- Удалена группа с id: &quot; + id);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OB038NMOEeWGqPW1NAIvyQ" name="id" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OB4iUNMOEeWGqPW1NAIvyQ" name="delMgroup" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OB6-kNMOEeWGqPW1NAIvyQ" name="addMgroup" visibility="public" bodyCondition="_OCC6YNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OCQ80NMOEeWGqPW1NAIvyQ">
+                <body>добавление нового упражнения</body>
+              </ownedComment>
+              <ownedRule xmi:id="_OCC6YNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OCDhcNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{ContentValues cv = new ContentValues();&#xA;    cv.put(&quot;name&quot;,name);&#xA;    dbb.insert(&quot;Mgroups&quot;, null, cv);//создание записи об упражнении&#xA;    // Ex_Params связь упражнения с параметрами&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OCLdQNMOEeWGqPW1NAIvyQ" name="name" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OCPHoNMOEeWGqPW1NAIvyQ" name="addMgroup" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N3kvwNMOEeWGqPW1NAIvyQ" name="Cursor"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N3tSoNMOEeWGqPW1NAIvyQ" name="SQLiteDatabase"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N34RwNMOEeWGqPW1NAIvyQ" name="Context"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_N7JBINMOEeWGqPW1NAIvyQ" name="long"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_OCdKENMOEeWGqPW1NAIvyQ" name="tab1">
+            <generalization xmi:id="_OCm7ENMOEeWGqPW1NAIvyQ" general="_OxZTsNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OCrMgNMOEeWGqPW1NAIvyQ">
+                <body>tab1 extends Fragment</body>
+              </ownedComment>
+            </generalization>
+            <ownedAttribute xmi:id="_OD8-4NMOEeWGqPW1NAIvyQ" name="LOG_TAG" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_OEBQUNMOEeWGqPW1NAIvyQ" name="cr" visibility="package" type="_OEDskNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OELBUNMOEeWGqPW1NAIvyQ" name="spComplex" visibility="package" type="_OENdkNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OEVZYNMOEeWGqPW1NAIvyQ" name="spExsOfComplex" visibility="package" type="_OENdkNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OEgYgNMOEeWGqPW1NAIvyQ" name="lvExsOfComplex" visibility="package" type="_OEl4ENMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OEua8NMOEeWGqPW1NAIvyQ" name="tvv" visibility="package" type="_OExeQNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OE5aENMOEeWGqPW1NAIvyQ" name="llSetParam" visibility="package" type="_OE7PQNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OFCkANMOEeWGqPW1NAIvyQ" name="llSetsOfTrainingAndExs" visibility="package" type="_OE7PQNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OFLG4NMOEeWGqPW1NAIvyQ" name="btnNewTraining" visibility="package" type="_OFNjINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OFU34NMOEeWGqPW1NAIvyQ" name="btnEndTraining" visibility="package" type="_OFNjINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OFeB0NMOEeWGqPW1NAIvyQ" name="lstAdapter" visibility="package" type="_OFgeENMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OFqPENMOEeWGqPW1NAIvyQ" name="lst2adapter" visibility="package" type="_OFgeENMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OF0AENMOEeWGqPW1NAIvyQ" name="paramsOfEx" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OF-YINMOEeWGqPW1NAIvyQ" name="ExsOfComplex" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OGG7ANMOEeWGqPW1NAIvyQ" name="SetsOfTraining" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OGPd4NMOEeWGqPW1NAIvyQ" name="resultsOfTrainingAndEx" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OGYAwNMOEeWGqPW1NAIvyQ" name="infl" visibility="package" type="_Nx_FINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OGgjoNMOEeWGqPW1NAIvyQ" name="idNowTraining" visibility="package" type="_N7JBINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OGq7sNMOEeWGqPW1NAIvyQ" name="today" visibility="package" type="_OGtX8NMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OG1TwNMOEeWGqPW1NAIvyQ" name="date_tr" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OG92oNMOEeWGqPW1NAIvyQ" name="start_time" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OHHAkNMOEeWGqPW1NAIvyQ" name="end_time" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OHQKgNMOEeWGqPW1NAIvyQ" name="k" visibility="package" type="_NxeHwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OHZUcNMOEeWGqPW1NAIvyQ" name="id_exs" visibility="package" type="_N7JBINMOEeWGqPW1NAIvyQ"/>
+            <ownedOperation xmi:id="_OIC0sNMOEeWGqPW1NAIvyQ" name="onCreateView" visibility="public" bodyCondition="_OIHtMNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OIHtMNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OIIUQNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="    {&#xA;        View view = inflater.inflate(R.layout.tab1, container, false);&#xA;        infl = inflater;&#xA;        spComplex = (Spinner) view.findViewById(R.id.spComplex);&#xA;        // lvExsOfComplex=(ListView) view.findViewById(R.id.lvExsOfComplex);&#xA;        spExsOfComplex = (Spinner) view.findViewById(R.id.spExsOfComplex);&#xA;&#xA;&#xA;        btnNewTraining = (Button) view.findViewById(R.id.btnNewTraining);&#xA;        btnEndTraining = (Button) view.findViewById(R.id.btnEndTraining);&#xA;&#xA;&#xA;        tvv = (TextView) view.findViewById(R.id.tvExNow);&#xA;        llSetParam = (LinearLayout) view.findViewById(R.id.llSetParam);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;        llSetsOfTrainingAndExs = (LinearLayout) view.findViewById(R.id.llSetsOfTrainingAndExs);&#xA;/*&#xA;       int ii=0,jj=0;&#xA;        for (ii=0;ii&lt;30;ii++)&#xA;        {   View set_item = inflater.inflate(R.layout.set_item, null);&#xA;            LinearLayout ll_set_item=(LinearLayout) set_item.findViewById(R.id.ll_set_item);&#xA;&#xA;            for (jj=0;jj&lt;50;jj++)&#xA;            {View table_sets_textview = inflater.inflate(R.layout.table_sets_textview, null);&#xA;              TextView tv_table_sets=(TextView) table_sets_textview.findViewById(R.id.tv_table_sets);&#xA;&#xA;&#xA;                if ((ii==0)&amp;&amp;(jj==0))&#xA;                {tv_table_sets.setText(&quot;№&quot; + ii);&#xA;                    tv_table_sets.setTextColor(Color.BLUE);&#xA;&#xA;                }&#xA;                else&#xA;                   if ((ii==0)&amp;&amp;(jj>0))&#xA;                {   tv_table_sets.setText(&quot;ves&quot; + ii);&#xA;                    tv_table_sets.setTextColor(Color.RED);&#xA;                }&#xA;                else&#xA;&#xA;                if ((ii>0)&amp;&amp;(jj==0))&#xA;                {&#xA;                    tv_table_sets.setText(&quot;&quot; + ii);&#xA;                    tv_table_sets.setTextColor(Color.GREEN);&#xA;                }&#xA;                else&#xA;                {tv_table_sets.setText(&quot;&quot;+jj);&#xA;                    //tv_table_sets.setWidth(30);&#xA;                }&#xA;&#xA;            ll_set_item.addView(table_sets_textview);&#xA;            }&#xA;&#xA;            llSetsOfTrainingAndExs.addView(set_item);&#xA;        }&#xA;*/&#xD;&#xA;&#xA;&#xA;        btnNewTraining.setEnabled(true);&#xA;        btnEndTraining.setEnabled(false);&#xA;&#xA;&#xA;&#xA;        spComplex.setEnabled(false);&#xA;        spExsOfComplex.setEnabled(false);&#xA;        cr = (Chronometer) view.findViewById(R.id.chronometer);&#xA;&#xA;        btnNewTraining.setOnClickListener(new View.OnClickListener() {&#xA;                                              @Override&#xA;                                              public void onClick(View v) {&#xA;                                                  //  cr.setBase(SystemClock.elapsedRealtime());&#xA;                                                  cr.setBase(SystemClock.elapsedRealtime());&#xA;                                                  cr.start();&#xA;                                                  today.setToNow();&#xA;                                                  date_tr = today.format(&quot;%d.%m.%Y&quot;);&#xA;                                                  start_time = today.format(&quot;%k:%M:%S&quot;);&#xA;                                                  MainActivity.db.addNewTraining(date_tr, start_time);&#xA;&#xA;                                                  Cursor Trainings = MainActivity.db.getTrainings();&#xA;                                                  idNowTraining = Trainings.getCount();&#xA;                                                 // btnEndTraining.setText(&quot;&quot; + (Trainings.getCount()));&#xA;&#xA;                                                  btnNewTraining.setEnabled(false);&#xA;                                                  btnEndTraining.setEnabled(true);&#xA;                                                  spComplex.setEnabled(true);&#xA;                                                  spExsOfComplex.setEnabled(true);&#xA;&#xA;                                                  if ((ExsOfComplex.getCount() >= 1)) {&#xA;                                                      ReloadListSetsOfTraining(idNowTraining, spExsOfComplex.getSelectedItemId());&#xA;&#xA;                                                  } else {&#xA;&#xA;                                                  }&#xA;&#xA;                                              }&#xA;                                          }&#xA;        );&#xA;&#xA;&#xA;        btnEndTraining.setOnClickListener(new View.OnClickListener() {&#xA;                                              @Override&#xA;                                              public void onClick(View v) {&#xA;                                                  cr.stop();&#xA;                                                  today.setToNow();&#xA;                                                  end_time = today.format(&quot;%k:%M:%S&quot;);&#xA;                                                  MainActivity.db.endTraining(date_tr, start_time, end_time);&#xA;&#xA;&#xA;&#xA;                                                 /* Calendar c = Calendar.getInstance();&#xA;&#xA;                                                //  int seconds = c.get(Calendar.SECOND);&#xA;                                                  int dfw=c.get(Calendar.DAY_OF_WEEK);&#xA;                                                  int day=c.get(Calendar.DAY_OF_MONTH);&#xA;                                                  int month=c.get(Calendar.MONTH);&#xA;                                                  int year=c.get(Calendar.YEAR);&#xA;                                                  int minutes= c.get(Calendar.MINUTE);&#xA;                                                  int hours= c.get(Calendar.HOUR_OF_DAY);&#xA;                                                  btnEndTraining.setText(dfw+&quot;  &quot;+ day+&quot;.&quot;+month+&quot;.&quot;+year+&quot;   &quot;+hours+&quot;:&quot;+minutes);&#xA;                                                 */&#xD;&#xA;&#xA;&#xA;                                                  //btnEndTraining.setText(date_tr + &quot;  &quot; + end_time);&#xA;&#xA;&#xA;                                                  btnNewTraining.setEnabled(true);&#xA;                                                  btnEndTraining.setEnabled(false);&#xA;                                                  spComplex.setEnabled(false);&#xA;                                                  spExsOfComplex.setEnabled(false);&#xA;&#xA;                                              }&#xA;                                          }&#xA;        );&#xA;&#xA;        spComplex.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {&#xA;            public void onItemSelected(AdapterView&lt;?> parent, View itemSelected, int selectedItemPosition, long selectedId) {&#xA;                // selected_mgroup_id = selectedId;&#xA;                Log.d(LOG_TAG, &quot;SELECTED ITEM id: &quot; + selectedId + &quot;  child pos:&quot; + selectedItemPosition + &quot;   &quot;);&#xA;                ReloadListExs(selectedId);&#xA;&#xA;            }&#xA;&#xA;            public void onNothingSelected(AdapterView&lt;?> parent) {&#xA;            }&#xA;        });&#xA;&#xA;        spExsOfComplex.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {&#xA;&#xA;&#xA;            @Override&#xA;            public void onItemSelected(AdapterView&lt;?> parent, View view, int position, long id) {&#xA;                //   tvv.setText(&quot;&quot;+id);&#xA;                ExsOfComplex.moveToPosition(position);&#xA;                tvv.setText(&quot;&quot; + ExsOfComplex.getString(ExsOfComplex.getColumnIndex(&quot;name&quot;)));&#xA;&#xA;&#xA;                ReloadParamsofEx(id);&#xA;                id_exs = id;&#xA;&#xA;                Log.d(LOG_TAG, &quot; ITEM id: &quot; + id + &quot;  child pos:&quot; + position + &quot;   &quot;);&#xA;&#xA;/********************************************************************************************//////&#xA;                llSetParam.removeAllViews();&#xA;                final int n;&#xA;                int i;&#xA;                LayoutInflater layoutInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);&#xA;&#xA;&#xA;                final View addedView = layoutInflater.inflate(R.layout.row, null);&#xA;              //  TextView textOut = (TextView) addedView.findViewById(R.id.textout);&#xA;&#xA;                //  Lparams.setMargins(10, 10, 0, 30);&#xA;             //   textOut.setText(&quot;ПОДХОД №&quot; + k);&#xA;&#xA;                final LinearLayout llsetsxxx = (LinearLayout) addedView.findViewById(R.id.llsets);&#xA;&#xA;&#xA;                n = paramsOfEx.getCount();&#xA;&#xA;                for (i = 0; i &lt; n; i++) {&#xA;                    /***************************/&#xA;&#xA;                    View row_param = layoutInflater.inflate(R.layout.row_param, null);&#xA;                    TextView tv_name_param = (TextView) row_param.findViewById(R.id.tv_name_param);&#xA;                    EditText et_value_param = (EditText) row_param.findViewById(R.id.et_value_param);&#xA;&#xA;                    NumberPicker np = (NumberPicker) row_param.findViewById(R.id.numberPicker1);&#xA;                    np.setOrientation(LinearLayout.HORIZONTAL);&#xA;                    np.setMaxValue(500);&#xA;                    np.setMinValue(1);&#xA;&#xA;                    llsetsxxx.addView(row_param);&#xA;&#xA;&#xA;                    tv_name_param.setId(i);&#xA;                    paramsOfEx.moveToPosition(i);&#xA;                    String s = paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;param&quot;)) + &quot; (&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;type_par&quot;)) + &quot;)&quot;;&#xA;                    tv_name_param.setText(s);&#xA;&#xA;                    et_value_param.setId(i + 100);&#xA;                    et_value_param.setInputType(InputType.TYPE_CLASS_NUMBER);&#xA;                    et_value_param.setBackgroundColor(getResources().getColor(R.color.edit));&#xA;                    /***************************/&#xA;&#xA;                  /*  LinearLayout stroka = new LinearLayout(getActivity());&#xA;&#xA;                    stroka.setOrientation(LinearLayout.HORIZONTAL);&#xA;                    stroka.setId(i + 500);&#xA;                    LinearLayout.LayoutParams Lparams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);&#xA;                    if (i == 0) {&#xA;&#xA;                        Lparams.setMargins(10, 30, 0, 0);&#xA;                    } else {&#xA;                        Lparams.setMargins(10, 10, 0, 0);&#xA;                    }&#xA;&#xA;                    stroka.setBackgroundColor(getResources().getColor(R.color.translucent_orange));&#xA;                    stroka.setLayoutParams(Lparams);&#xA;&#xA;&#xA;                    llsetsxxx.addView(stroka);&#xA;&#xA;&#xA;                    TextView tvParam = new TextView(getActivity());&#xA;&#xA;                    tvParam.setId(i);&#xA;                    paramsOfEx.moveToPosition(i);&#xA;                    String s = paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;param&quot;)) + &quot; (&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;type_par&quot;)) + &quot;)&quot;;&#xA;                    tvParam.setText(s);&#xA;                    tvParam.setTextSize(16);&#xA;                    tvParam.setWidth(200);&#xA;                    // llsetsxxx.addView(tvParam);&#xA;                    stroka.addView(tvParam);&#xA;&#xA;&#xA;                    EditText eParam = new EditText(getActivity());&#xA;                    eParam.setId(i + 100);&#xA;                    eParam.setInputType(InputType.TYPE_CLASS_NUMBER);&#xA;                    eParam.setWidth(250);&#xA;                    eParam.setBackgroundColor(getResources().getColor(R.color.edit));&#xA;                    // llsetsxxx.addView(eParam);&#xA;                    stroka.addView(eParam);&#xA;                    //tvv.setText(&quot;K:&quot; +k+&quot;   I:&quot;+i+&quot;  id:&quot;);// + tvSet.getId());*/&#xD;&#xA;&#xA;                }&#xA;&#xA;                if (btnNewTraining.isEnabled() == false) {&#xA;                    ReloadListSetsOfTraining(idNowTraining, spExsOfComplex.getSelectedItemId());&#xA;                }&#xA;                llSetParam.addView(addedView);&#xA;&#xA;                Button btnAdd = (Button) addedView.findViewById(R.id.btnRec);&#xA;&#xA;                if (btnEndTraining.isEnabled()) {&#xA;                    btnAdd.setEnabled(true);&#xA;                } else {&#xA;                    btnAdd.setEnabled(false);&#xA;                }&#xA;&#xA;&#xA;                btnAdd.setOnClickListener(new View.OnClickListener() {&#xA;                    @Override&#xA;                    public void onClick(View v) {&#xA;                        tvv.setText(&quot;&quot;);&#xA;                        int i, countSets;&#xA;                        boolean isNulls=true;&#xA;                        ReloadListSetsOfTraining(idNowTraining, spExsOfComplex.getSelectedItemId());&#xA;                        countSets = SetsOfTraining.getCount();&#xA;&#xA;                        for (i = 0; i &lt; n; i++) {&#xA;                            EditText eParam = (EditText) addedView.findViewById(i + 100);&#xA;                            // tvv.setText(tvv.getText() + &quot; &quot; + eParam.getText() + &quot;  &quot; + spExsOfComplex.getSelectedItemId());&#xA;                            paramsOfEx.moveToPosition(eParam.getId() - 100);&#xA;&#xA;                            if (eParam.getText().toString().equals(&quot;&quot;))&#xA;                            {Log.d(LOG_TAG, &quot;pustaya stroka^^&quot;+eParam.getText().toString().equals(&quot;&quot;));&#xA;                                Log.d(LOG_TAG, &quot;stroka[&quot;+eParam.getText().toString()+&quot;]&quot;);&#xA;                                Toast toast = Toast.makeText(getContext(),&quot;Введите все значения результатов!&quot;, Toast.LENGTH_SHORT);;&#xA;                                toast.show();&#xA;                                isNulls=true;&#xA;                               break;&#xA;                            }&#xA;                            else&#xA;                            {   Log.d(LOG_TAG, &quot;nepustaya stroka^^&quot;+eParam.getText().toString().equals(&quot;&quot;));&#xA;                                Log.d(LOG_TAG, &quot;stroka[&quot; + eParam.getText().toString() + &quot;]&quot;);&#xA;                                isNulls=false;&#xA;                            }&#xA;&#xA;                        }&#xA;&#xA;                        Log.d(LOG_TAG, &quot;isNulls^^&quot;+isNulls);&#xA;&#xA;&#xA;&#xA;                    if (!isNulls)&#xA;&#xA;                    {&#xA;                        MainActivity.db.addSet(idNowTraining, countSets + 1, spExsOfComplex.getSelectedItemId());&#xA;                        ReloadListSetsOfTraining(idNowTraining, spExsOfComplex.getSelectedItemId());&#xA;                        SetsOfTraining.moveToLast();&#xA;&#xA;                        for (i = 0; i &lt; n; i++) {&#xA;                                EditText eParam = (EditText) addedView.findViewById(i + 100);&#xA;                                // tvv.setText(tvv.getText() + &quot; &quot; + eParam.getText() + &quot;  &quot; + spExsOfComplex.getSelectedItemId());&#xA;                                paramsOfEx.moveToPosition(eParam.getId() - 100);&#xA;&#xA;&#xA;                                    MainActivity.db.addResultOfSet(Long.valueOf(SetsOfTraining.getString(SetsOfTraining.getColumnIndex(&quot;_id&quot;))), Long.valueOf(paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;_id&quot;))), Long.parseLong(eParam.getText().toString()));&#xA;                                    Log.d(LOG_TAG, &quot;id last set: &quot; + SetsOfTraining.getString(SetsOfTraining.getColumnIndex(&quot;_id&quot;)) + &quot;  id_param:  &quot; + (paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;_id&quot;))) + &quot;  res: &quot; + Long.parseLong(eParam.getText().toString()) + &quot;   &quot;);&#xA;                                    eParam.setText(&quot;&quot;);&#xA;&#xA;                        }&#xA;&#xA;                        Toast toast = Toast.makeText(getContext(),&quot;Результаты подхода записаны!&quot;, Toast.LENGTH_SHORT);&#xA;                        toast.show();&#xA;&#xA;                        ReloadSets();&#xA;&#xA;                    }&#xA;&#xA;&#xA;&#xA;&#xA;                        // ((LinearLayout) addedView.getParent()).removeView(addedView);&#xA;                        // k--;&#xA;&#xA;                        //ReloadListSetsOfTraining(idNowTraining, spExsOfComplex.getSelectedItemId());&#xA;&#xA;&#xA;&#xA;&#xA;                    }&#xA;                });&#xA;&#xA;&#xA;//                Button buttonRemove = (Button) addedView.findViewById(R.id.remove);&#xA;//&#xA;//                buttonRemove.setOnClickListener(new View.OnClickListener() {&#xA;//                    @Override&#xA;//                    public void onClick(View v) {&#xA;//                        int i;&#xA;//                        for (i = 0; i &lt; n; i++) {&#xA;//                            EditText eParam = (EditText) addedView.findViewById(i + 100);&#xA;//                            eParam.setText(&quot;&quot;);&#xA;//                        }&#xA;//                        //k--;&#xA;//                    }&#xA;//                });&#xA;&#xA;                /*******************************************************************************************/&#xA;            }&#xA;&#xA;            @Override&#xA;            public void onNothingSelected(AdapterView&lt;?> parent) {&#xA;&#xA;            }&#xA;        });&#xA;&#xA;&#xA;&#xA;        ReloadComplexesLists();&#xA;&#xA;&#xA;        return view;&#xA;    }&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OIUhgNMOEeWGqPW1NAIvyQ" name="inflater" type="_Nx_FINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OIXk0NMOEeWGqPW1NAIvyQ" name="container" type="_NyGZ4NMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OIbPMNMOEeWGqPW1NAIvyQ" name="savedInstanceState" type="_NyNuoNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OIeSgNMOEeWGqPW1NAIvyQ" name="onCreateView" type="_NunBANMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OIguwNMOEeWGqPW1NAIvyQ" name="ReloadComplexesLists" visibility="public" bodyCondition="_OInccNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OInccNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OIoDgNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="    {&#xA;        Cursor cursor = MainActivity.db.getComplexesList();&#xA;&#xA;        SpinnerAdapter spinAdapter = new SimpleCursorAdapter(getActivity(),&#xA;                android.R.layout.simple_spinner_dropdown_item,&#xA;                cursor,&#xA;                new String[]{&quot;name&quot;},&#xA;                new int[]{android.R.id.text1});&#xA;&#xA;        spComplex.setAdapter(spinAdapter);&#xA;&#xA;&#xA;&#xA;      /*  Cursor mgroups=MainActivity.db.getExsOfComplexes(spComplex.getSelectedItemId());&#xA;&#xA;        ListAdapter lstAdapter = new SimpleCursorAdapter(getActivity(),&#xA;                R.layout.list_item_1,&#xA;                mgroups,&#xA;                new String[] {&quot;name&quot;},&#xA;                new int[] {android.R.id.text1});&#xA;&#xA;&#xA;        lvExsOfComplex.setAdapter(lstAdapter);&#xA;&#xA;&#xA;*/&#xD;&#xA;&#xA;    }&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OIrt4NMOEeWGqPW1NAIvyQ" name="ReloadComplexesLists" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OIuxMNMOEeWGqPW1NAIvyQ" name="ReloadParamsofEx" visibility="public" bodyCondition="_OI2F8NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OI2F8NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OI3UENMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    paramsOfEx = MainActivity.db.getParamsOfEx(idEx);&#xA;&#xA;    lst2adapter = new SimpleCursorAdapter(getActivity(),&#xA;            android.R.layout.simple_list_item_1,&#xA;            paramsOfEx,&#xA;            new String[]{&quot;param&quot;},&#xA;            new int[]{android.R.id.text1});&#xA;&#xA;&#xA;    //lvExsOfComplex.setAdapter(lst2adapter);&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OI9asNMOEeWGqPW1NAIvyQ" name="idEx" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OJFWgNMOEeWGqPW1NAIvyQ" name="ReloadParamsofEx" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OJHywNMOEeWGqPW1NAIvyQ" name="ReloadListExs" visibility="public" bodyCondition="_OJPukNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OJPukNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OJQ8sNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    ExsOfComplex = MainActivity.db.getExsOfComplexes(id_Complex);&#xA;&#xA;    SpinnerAdapter spinAdapter = new SimpleCursorAdapter(getActivity(),&#xA;            android.R.layout.simple_list_item_1,&#xA;            ExsOfComplex,&#xA;            new String[]{&quot;name&quot;},&#xA;            new int[]{android.R.id.text1});&#xA;&#xA;&#xA;    // lvExsOfComplex.setAdapter(lstAdapter);&#xA;    spExsOfComplex.setAdapter(spinAdapter);&#xA;&#xA;    if ((ExsOfComplex.getCount() >= 1) &amp;&amp; (btnNewTraining.isEnabled() == false)) {&#xA;&#xA;&#xA;        ExsOfComplex.moveToPosition(0);&#xA;        tvv.setText(&quot;&quot; + ExsOfComplex.getString(ExsOfComplex.getColumnIndex(&quot;name&quot;)));&#xA;&#xA;        id_exs = Integer.parseInt(ExsOfComplex.getString(ExsOfComplex.getColumnIndex(&quot;_id&quot;)));&#xA;        ReloadParamsofEx(id_exs);&#xA;    } else {&#xA;&#xA;        llSetParam.removeAllViews();&#xA;    }&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OJY4gNMOEeWGqPW1NAIvyQ" name="id_Complex" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OJhbYNMOEeWGqPW1NAIvyQ" name="ReloadListExs" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OJkesNMOEeWGqPW1NAIvyQ" name="ReloadSets" visibility="public" bodyCondition="_OJsagNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OJsagNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OJtooNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="    {&#xA;        ReloadListSetsOfTraining(idNowTraining, spExsOfComplex.getSelectedItemId());&#xA;        ReloadParamsofEx(spExsOfComplex.getSelectedItemId());&#xA;&#xA;        llSetsOfTrainingAndExs.removeAllViews();&#xA;        int ii = 0;&#xA;        int setsCount = SetsOfTraining.getCount();&#xA;        int jj = 0;&#xA;        int paramsCount = paramsOfEx.getCount();&#xA;        int[] rowwidth = new int[20];&#xA;        Log.d(LOG_TAG, &quot;КОЛИЧЕСТВО ПОДХОДОВ &quot; + setsCount + &quot;   ПАРАМЕТРОВ &quot; + paramsCount);&#xA;&#xA;        for (ii = -1; ii &lt; setsCount; ii++) {&#xA;&#xA;            final View set_item = infl.inflate(R.layout.set_item, null);&#xA;            LinearLayout ll_set_item = (LinearLayout) set_item.findViewById(R.id.ll_set_item);&#xA;&#xA;            final int k = ii;&#xA;            ll_set_item.setOnClickListener(new View.OnClickListener() {&#xA;                @Override&#xA;                public void onClick(View v) {&#xA;                    Log.d(LOG_TAG, &quot;КЛИКНУТ № &quot; + k);&#xA;                }&#xA;            });&#xA;&#xA;            Log.d(LOG_TAG, &quot;ii=&quot; + ii + &quot; jj=&quot; + jj);&#xA;&#xA;            if (ii == -1) {&#xA;                set_item.setBackgroundColor(Color.BLUE);&#xA;                ll_set_item.setBackgroundColor(Color.GRAY);&#xA;                for (jj = -1; jj &lt; paramsCount; jj++) {&#xA;&#xA;                    View table_sets_textview = infl.inflate(R.layout.table_sets_textview, null);&#xA;                    TextView tv_table_sets = (TextView) table_sets_textview.findViewById(R.id.tv_table_sets);&#xA;                   // tv_table_sets.setBackgroundColor(Color.RED);&#xA;&#xA;                    if (jj == -1) {&#xA;                        tv_table_sets.setText(&quot;№&quot;);&#xA;                        tv_table_sets.setTextColor(Color.BLACK);&#xA;                        // tv_table_sets.setWidth(30);&#xA;&#xA;                    } else {&#xA;                        paramsOfEx.moveToPosition(jj);&#xA;&#xA;&#xA;                        Log.d(LOG_TAG, &quot;ii=&quot; + ii + &quot; jj=&quot; + jj + &quot; param:&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;param&quot;)));&#xA;&#xA;                        tv_table_sets.setText(&quot;&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;param&quot;)) + &quot; (&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;type_par&quot;)) + &quot;)&quot;);&#xA;                        tv_table_sets.setTextColor(Color.BLACK);&#xA;                        //  tv_table_sets.setWidth(160);&#xA;                    }&#xA;&#xA;                    ll_set_item.addView(table_sets_textview);&#xA;&#xA;                    // tv_table_sets.setWidth(30);&#xA;                    rowwidth[jj + 1] = spExsOfComplex.getWidth();&#xA;                    Log.d(LOG_TAG, &quot;rowwidth[jj+1]=&quot; + rowwidth[jj + 1]);&#xA;&#xA;                    table_sets_textview.setId((ii + 2) * 100000 + (jj + 2) * 1000);&#xA;                    tv_table_sets.setId((ii + 2) * 10000 + (jj + 2) * 1000);&#xA;                }&#xA;            } else {&#xA;                SetsOfTraining.moveToPosition(ii);&#xA;                long set_id = Long.valueOf(SetsOfTraining.getString(SetsOfTraining.getColumnIndex(&quot;_id&quot;)));&#xA;&#xA;                for (jj = -1; jj &lt; paramsCount; jj++) {&#xA;&#xA;                    View table_sets_textview = infl.inflate(R.layout.table_sets_textview, null);&#xA;                    TextView tv_table_sets = (TextView) table_sets_textview.findViewById(R.id.tv_table_sets);&#xA;&#xA;&#xA;                    if (jj == -1) {&#xA;                        tv_table_sets.setText(&quot;&quot; + (ii + 1));&#xA;                        tv_table_sets.setTextColor(Color.BLUE);&#xA;                        //  tv_table_sets.setWidth(30);&#xA;&#xA;&#xA;                    } else&#xA;&#xA;                    {&#xA;                        paramsOfEx.moveToPosition(jj);&#xA;                        long param_id = Long.valueOf(paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;_id&quot;)));&#xA;&#xA;&#xA;                        resultsOfTrainingAndEx = MainActivity.db.getResultsOfSetAndParam(set_id, param_id);&#xA;                        resultsOfTrainingAndEx.moveToFirst();&#xA;&#xA;                        Log.d(LOG_TAG, &quot;******************************************************&quot;);&#xA;                        Log.d(LOG_TAG, &quot;!!!  set_id=&quot; + set_id + &quot; param_id=&quot; + param_id + &quot;SetsOfTraining.id&quot; + Long.valueOf(SetsOfTraining.getString(SetsOfTraining.getColumnIndex(&quot;_id&quot;))) + &quot;  getcount&quot; + SetsOfTraining.getCount());&#xA;                        Log.d(LOG_TAG, &quot; РЕЗУЛЬТАТ &quot; + resultsOfTrainingAndEx.getString(resultsOfTrainingAndEx.getColumnIndex(&quot;res&quot;)));&#xA;&#xA;                        Log.d(LOG_TAG, &quot;!!!  ii=&quot; + ii + &quot; jj=&quot; + jj + &quot; param:&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;param&quot;)));&#xA;                        Log.d(LOG_TAG, &quot;******************************************************&quot;);&#xA;&#xA;                        tv_table_sets.setText(resultsOfTrainingAndEx.getString(resultsOfTrainingAndEx.getColumnIndex(&quot;res&quot;)));&#xA;                        // tv_table_sets.setWidth(15);&#xA;                        //  tv_table_sets.setWidth(160);&#xA;&#xA;                    }&#xA;                    //  tv_table_sets.setWidth(rowwidth[jj+1]);&#xA;                    //  tv_table_sets.setWidth(30);&#xA;                    ll_set_item.addView(table_sets_textview);&#xA;&#xA;                    table_sets_textview.setId((ii + 2) * 100000 + (jj + 2) * 1000);&#xA;                    tv_table_sets.setId((ii + 2) * 10000 + (jj + 2) * 1000);&#xA;&#xA;                }&#xA;            }&#xA;&#xA;            llSetsOfTrainingAndExs.addView(set_item);&#xA;&#xA;            set_item.setId((ii + 2) * 1000000 + (jj + 2) * 1000);&#xA;            ll_set_item.setId((ii + 2) * 100000000);&#xA;        }&#xA;&#xA;//        for (ii = -1; ii &lt; setsCount; ii++)&#xA;&#xA;&#xA;        ii = -1;&#xA;        {&#xA;            View set_item = (View) llSetsOfTrainingAndExs.findViewById((ii + 2) * 1000000 + (jj + 2) * 1000);&#xA;            LinearLayout ll_set_item = (LinearLayout) set_item.findViewById((ii + 2) * 100000000);&#xA;&#xA;            for (jj = -1; jj &lt; paramsCount; jj++) {&#xA;                View table_sets_textview = ll_set_item.findViewById((ii + 2) * 100000 + (jj + 2) * 1000);//infl.inflate(R.layout.table_sets_textview, null);&#xA;                TextView ttt = (TextView) table_sets_textview.findViewById((ii + 2) * 10000 + (jj + 2) * 1000);&#xA;&#xA;//                LinearLayout.LayoutParams pars= (LinearLayout.LayoutParams) ttt.getLayoutParams();&#xA;&#xA;                rowwidth[jj + 1] = ttt.length() * 10;&#xA;                ttt.setWidth(rowwidth[jj + 1]);&#xA;                ttt.setWidth(((llSetParam.getWidth()) / 4) - 5);&#xA;                Log.d(LOG_TAG, &quot;*************&quot; + rowwidth[jj + 1] + &quot;*****&quot; + llSetParam.getWidth() + &quot;**************&quot; + set_item.getWidth() + &quot;**********************&quot;);&#xA;&#xA;&#xA;            }&#xA;        }&#xA;&#xA;&#xA;        for (ii = 0; ii &lt; setsCount; ii++) {&#xA;            View set_item = getActivity().findViewById((ii + 2) * 1000000 + (jj + 2) * 1000);&#xA;            LinearLayout ll_set_item = (LinearLayout) set_item.findViewById((ii + 2) * 100000000);&#xA;&#xA;            for (jj = -1; jj &lt; paramsCount; jj++) {&#xA;                View table_sets_textview = ll_set_item.findViewById((ii + 2) * 100000 + (jj + 2) * 1000);&#xA;                TextView ttt = (TextView) table_sets_textview.findViewById((ii + 2) * 10000 + (jj + 2) * 1000);&#xA;                ttt.setWidth(rowwidth[jj + 1]);&#xA;                ttt.setWidth(((llSetParam.getWidth()) / 4) - 5);&#xA;&#xA;&#xA;            }&#xA;        }&#xA;&#xA;&#xA;    }&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OJxTANMOEeWGqPW1NAIvyQ" name="ReloadSets" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OJ2LgNMOEeWGqPW1NAIvyQ" name="ReloadListSetsOfTraining" visibility="public" bodyCondition="_OJ-HUNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OJ-HUNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OJ_VcNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="    {&#xA;        SetsOfTraining = MainActivity.db.getSetsOfTraining(id_training, id_exs);&#xA;&#xA;//        lstAdapter = new SimpleCursorAdapter(getActivity(),&#xA;//&#xA;//                android.R.layout.simple_list_item_1,&#xA;//                SetsOfTraining,&#xA;//                new String[]{&quot;Sets_tr.num&quot;},&#xA;//                new int[]{android.R.id.text1});&#xA;//&#xA;//&#xA;//&#xA;&#xA;&#xA;&#xA;        return SetsOfTraining;&#xA;    }&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OKHRQNMOEeWGqPW1NAIvyQ" name="id_training" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OKLisNMOEeWGqPW1NAIvyQ" name="id_exs" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OKP0INMOEeWGqPW1NAIvyQ" name="ReloadListSetsOfTraining" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OEDskNMOEeWGqPW1NAIvyQ" name="Chronometer"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OENdkNMOEeWGqPW1NAIvyQ" name="Spinner"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OEl4ENMOEeWGqPW1NAIvyQ" name="ListView"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OExeQNMOEeWGqPW1NAIvyQ" name="TextView"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OE7PQNMOEeWGqPW1NAIvyQ" name="LinearLayout"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OFNjINMOEeWGqPW1NAIvyQ" name="Button"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OFgeENMOEeWGqPW1NAIvyQ" name="ListAdapter"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OGtX8NMOEeWGqPW1NAIvyQ" name="Time"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_OKcBYNMOEeWGqPW1NAIvyQ" name="tab2">
+            <ownedComment xmi:id="_ONIwENMOEeWGqPW1NAIvyQ">
+              <body>Created by Dr.h3cker on 14/03/2015.&#xD;
+</body>
+            </ownedComment>
+            <generalization xmi:id="_OKkkQNMOEeWGqPW1NAIvyQ" general="_OxZTsNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OKoOoNMOEeWGqPW1NAIvyQ">
+                <body>tab2 extends Fragment</body>
+              </ownedComment>
+            </generalization>
+            <ownedAttribute xmi:id="_OLWnYNMOEeWGqPW1NAIvyQ" name="LOG_TAG" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_OLbf4NMOEeWGqPW1NAIvyQ" name="lvSets" visibility="package" type="_OEl4ENMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OLl38NMOEeWGqPW1NAIvyQ" name="llSetsParamsHeader" visibility="package" type="_OE7PQNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OLvB4NMOEeWGqPW1NAIvyQ" name="llSetsListOfExs" visibility="package" type="_OE7PQNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OL4L0NMOEeWGqPW1NAIvyQ" name="llExsAndSetsOfTraining" visibility="package" type="_OE7PQNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OMB80NMOEeWGqPW1NAIvyQ" name="spTrainings" visibility="package" type="_OENdkNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OMLGwNMOEeWGqPW1NAIvyQ">
+                <body>spExsOfTraining</body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_OMNjANMOEeWGqPW1NAIvyQ" name="Sets" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OMXUANMOEeWGqPW1NAIvyQ" name="ExsOfTrainings" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OMgd8NMOEeWGqPW1NAIvyQ" name="Trainings" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OMqO8NMOEeWGqPW1NAIvyQ" name="paramsOfEx" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OMvHcNMOEeWGqPW1NAIvyQ" name="Results" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OM4RYNMOEeWGqPW1NAIvyQ" name="resultsOfTrainingAndEx" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OM-YANMOEeWGqPW1NAIvyQ" name="lstAdapter" visibility="package" type="_ONA0QNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_ONEeoNMOEeWGqPW1NAIvyQ" name="infl" visibility="package" type="_Nx_FINMOEeWGqPW1NAIvyQ"/>
+            <ownedOperation xmi:id="_ONkN4NMOEeWGqPW1NAIvyQ" name="onCreateView" visibility="public" bodyCondition="_ONofUNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_ONofUNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_ONpGYNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    View view = inflater.inflate(R.layout.tab2, container, false);&#xA;    infl = inflater;&#xA;&#xA;    //   lvSets=(ListView) view.findViewById(R.id.lvSets);&#xA;    spTrainings = (Spinner) view.findViewById(R.id.spTrainings);&#xA;   /* spExsOfTraining = (Spinner) view.findViewById(R.id.spExsOfTraining);*/&#xA;&#xA;    llSetsParamsHeader = (LinearLayout) view.findViewById(R.id.llSetsParamsHeader);&#xA;    llSetsListOfExs = (LinearLayout) view.findViewById(R.id.llSetsListOfExs);&#xA;&#xA;    llExsAndSetsOfTraining = (LinearLayout) view.findViewById(R.id.llExsAndSetsOfTraining);&#xA;&#xA;&#xA;    spTrainings.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {&#xA;        @Override&#xA;        public void onItemSelected(AdapterView&lt;?> parent, View itemSelected, int selectedItemPosition, long selectedId) {&#xA;            // selected_mgroup_id = selectedId;&#xA;            //   Log.d(LOG_TAG, &quot;SELECTED ITEM id: &quot; + selectedId + &quot;  child pos:&quot; + selectedItemPosition + &quot;   &quot;);&#xA;            ReloadListExsOfTraining(selectedId);&#xA;&#xA;&#xA;            ReloadTableTraining(selectedId);&#xA;&#xA;        }&#xA;&#xA;        @Override&#xA;        public void onNothingSelected(AdapterView&lt;?> parent) {&#xA;        }&#xA;    });&#xA;&#xA;    /*spExsOfTraining.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {&#xA;        @Override&#xA;        public void onItemSelected(AdapterView&lt;?> parent, View itemSelected, int selectedItemPosition, long selectedId) {&#xA;&#xA;&#xA;            int i;&#xA;&#xA;            //Формирование заголовков столбцов&#xA;            paramsOfEx = MainActivity.db.getParamsOfEx(selectedId);&#xA;            llSetsParamsHeader.removeAllViews();&#xA;            for (i = 0; i &lt; paramsOfEx.getCount(); i++) {&#xA;&#xA;                TextView tvParam = new TextView(getActivity());&#xA;                tvParam.setId(i);&#xA;                paramsOfEx.moveToPosition(i);&#xA;                String s = paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;param&quot;)) + &quot;\r\n (&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;type_par&quot;)) + &quot;)&quot;;&#xA;                tvParam.setText(s);&#xA;                tvParam.setTextSize(20);&#xA;                int widthrow = llSetsParamsHeader.getWidth() / paramsOfEx.getCount();&#xA;                tvParam.setWidth(widthrow);&#xA;                tvParam.setGravity(Gravity.CENTER_HORIZONTAL);&#xA;                // llsetsxxx.addView(tvParam);&#xA;                llSetsParamsHeader.addView(tvParam);&#xA;            }&#xA;            //...формирование заголовков столбцов&#xA;&#xA;            int k;&#xA;            Sets = MainActivity.db.getSetsOfTraining(spTrainings.getSelectedItemId(), spExsOfTraining.getSelectedItemId());&#xA;&#xA;            Log.d(LOG_TAG, &quot;---TRAINING-id-&quot; + spTrainings.getSelectedItemId() + &quot;  EXS ID:&quot; + spExsOfTraining.getSelectedItemId());&#xA;            Log.d(LOG_TAG, &quot;---COUNT SETS:-&quot; + Sets.getCount());&#xA;            llSetsListOfExs.removeAllViews();&#xA;            for (k = 0; k &lt; Sets.getCount(); k++) {&#xA;&#xA;                LinearLayout llxSet = new LinearLayout(getActivity());&#xA;                llxSet.setOrientation(LinearLayout.HORIZONTAL);&#xA;                llxSet.setId(i + 2500);&#xA;                LinearLayout.LayoutParams Lparams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);&#xA;                llxSet.setLayoutParams(Lparams);&#xA;                //llxSet.setBackgroundColor(getResources().getColor(R.color.translucent_orange));&#xA;&#xA;                TextView tvSet = new TextView(getActivity());&#xA;                tvSet.setId(k + 1500);&#xA;                Sets.moveToPosition(k);&#xA;                String st = (k + 1) + &quot; &quot; + Sets.getString(Sets.getColumnIndex(&quot;_id&quot;));&#xA;                tvSet.setText(st);&#xA;                tvSet.setTextSize(25);&#xA;                tvSet.setWidth(100);&#xA;&#xA;                llxSet.addView(tvSet);&#xA;&#xA;                int p;&#xA;                for (p = 0; p &lt; paramsOfEx.getCount(); p++) {&#xA;                    paramsOfEx.moveToPosition(p);&#xA;                    Results = MainActivity.db.getResultsOfSetAndParam(Long.valueOf(Sets.getString(Sets.getColumnIndex(&quot;_id&quot;))), Long.valueOf(paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;_id&quot;))));&#xA;                    //  Results = MainActivity.db.getResultsOfSetAndParam(4,0);&#xA;                    Results.moveToPosition(0);&#xA;&#xA;                    TextView tvRes = new TextView(getActivity());&#xA;                    tvRes.setId(p + 7500);&#xA;&#xA;                    Log.d(LOG_TAG, &quot;---RESULT:-&quot; + Results.getCount());//Results.getString(Results.getColumnIndex(&quot;Results._id&quot;)));&#xA;                    if (Results.getCount() > 0) {&#xA;                        String sres = &quot;     &quot; + Results.getString(Results.getColumnIndex(&quot;Results.res&quot;));&#xA;                        tvRes.setText(sres);&#xA;                    }&#xA;&#xA;                    tvRes.setTextSize(25);&#xA;                    Log.d(LOG_TAG, &quot;---width:-&quot; + (llxSet.getWidth()) / paramsOfEx.getCount());&#xA;                    tvRes.setWidth((llSetsListOfExs.getWidth()) / paramsOfEx.getCount());&#xA;                    tvRes.setGravity(Gravity.CENTER_HORIZONTAL);&#xA;&#xA;                    llxSet.addView(tvRes);&#xA;&#xA;                }&#xA;&#xA;                //   int widthrow= llSetsParamsHeader.getWidth()/paramsOfEx.getCount();&#xA;                // tvSet.setWidth(300);&#xA;                //  tvSet.setGravity(Gravity.CENTER_HORIZONTAL);&#xA;                // llsetsxxx.addView(tvParam);&#xA;                llSetsListOfExs.addView(llxSet);&#xA;            }&#xA;&#xA;&#xA;        }&#xA;&#xA;        @Override&#xA;        public void onNothingSelected(AdapterView&lt;?> parent) {&#xA;&#xA;        }&#xA;    });*/&#xD;&#xA;&#xA;&#xA;    //ReloadListSets();&#xA;    ReloadListTrainings();&#xA;&#xA;&#xA;    return view;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_ON0skNMOEeWGqPW1NAIvyQ" name="inflater" type="_Nx_FINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_ON4W8NMOEeWGqPW1NAIvyQ" name="container" type="_NyGZ4NMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_ON7aQNMOEeWGqPW1NAIvyQ" name="savedInstanceState" type="_NyNuoNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_ON_EoNMOEeWGqPW1NAIvyQ" name="onCreateView" type="_NunBANMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OOBg4NMOEeWGqPW1NAIvyQ" name="ReloadListTrainings" visibility="public" bodyCondition="_OOKq0NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OOKq0NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OOL48NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    Trainings = MainActivity.db.getTrainings();&#xA;&#xA;    lstAdapter = new SimpleCursorAdapter(getActivity(),&#xA;            //  lstAdapter = new CatAdapter(getActivity(),&#xA;            R.layout.simple_list_item_3,&#xA;            Trainings,&#xA;            new String[]{&quot;_id&quot;, &quot;date_tr&quot;, &quot;start_time_training&quot;},&#xA;            new int[]{R.id.text1, R.id.text2, R.id.text3}, 0);&#xA;&#xA;&#xA;    // lvSets.setAdapter(lstAdapter);&#xA;    spTrainings.setAdapter(lstAdapter);&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OOR_kNMOEeWGqPW1NAIvyQ" name="ReloadListTrainings" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OOVC4NMOEeWGqPW1NAIvyQ" name="ReloadTableTraining" visibility="public" bodyCondition="_OOeM0NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OOeM0NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OOfa8NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="    {&#xA;        llExsAndSetsOfTraining.removeAllViews();&#xA;&#xA;&#xA;        int aa = 0;&#xA;        int ii = 0;&#xA;        int jj = 0;&#xA;        int exsCount = ExsOfTrainings.getCount();&#xA;&#xA;        for (aa = 0; aa &lt; exsCount; aa++) {&#xA;&#xA;            ExsOfTrainings.moveToPosition(aa);&#xA;&#xA;            final View exs_item = infl.inflate(R.layout.row_parent, null);&#xA;            LinearLayout ll_parent = (LinearLayout) exs_item.findViewById(R.id.llParent);&#xA;&#xA;            LinearLayout ll_exs_item = (LinearLayout) exs_item.findViewById(R.id.llHeadTable);&#xA;            TextView tv_table_exs = (TextView) ll_exs_item.findViewById(R.id.nameEx);&#xA;&#xA;            tv_table_exs.setText((aa+1)+&quot;) &quot;+ExsOfTrainings.getString(ExsOfTrainings.getColumnIndex(&quot;name&quot;)));&#xA;&#xA;            ReloadListSetsOfTraining(id_training, Long.valueOf(ExsOfTrainings.getString(ExsOfTrainings.getColumnIndex(&quot;_id&quot;))));&#xA;//            View row_exs_textview = infl.inflate(R.layout.table_sets_textview, null);&#xA;//            TextView tv_table_exs = (TextView) table_exs_textview.findViewById(R.id.tv_table_sets);&#xA;&#xA;&#xA;            int setsCount = Sets.getCount();&#xA;            paramsOfEx = MainActivity.db.getParamsOfEx(Long.valueOf(ExsOfTrainings.getString(ExsOfTrainings.getColumnIndex(&quot;_id&quot;))));&#xA;            int paramsCount = paramsOfEx.getCount();&#xA;            int[] rowwidth = new int[20];&#xA;            Log.d(LOG_TAG, &quot;КОЛИЧЕСТВО ПОДХОДОВ &quot; + setsCount + &quot;   ПАРАМЕТРОВ &quot; + paramsCount);&#xA;&#xA;&#xA;            for (ii = -1; ii &lt; setsCount; ii++) {&#xA;&#xA;                final View set_item = infl.inflate(R.layout.set_item, null);&#xA;                LinearLayout ll_set_item = (LinearLayout) set_item.findViewById(R.id.ll_set_item);&#xA;&#xA;                final int k = ii;&#xA;                ll_set_item.setOnClickListener(new View.OnClickListener() {&#xA;                    @Override&#xA;                    public void onClick(View v) {&#xA;                        Log.d(LOG_TAG, &quot;КЛИКНУТ № &quot; + k);&#xA;                    }&#xA;                });&#xA;&#xA;                Log.d(LOG_TAG, &quot;ii=&quot; + ii + &quot; jj=&quot; + jj);&#xA;&#xA;                if (ii == -1) {&#xA;                    set_item.setBackgroundColor(Color.BLUE);&#xA;                    ll_set_item.setBackgroundColor(Color.GRAY);&#xA;                    for (jj = -1; jj &lt; paramsCount; jj++) {&#xA;&#xA;                      final  View table_sets_textview = infl.inflate(R.layout.table_sets_textview, null);&#xA;                        TextView tv_table_sets = (TextView) table_sets_textview.findViewById(R.id.tv_table_sets);&#xA;                        // tv_table_sets.setBackgroundColor(Color.RED);&#xA;&#xA;                        if (jj == -1) {&#xA;                            tv_table_sets.setText(&quot;№&quot;);&#xA;                            tv_table_sets.setTextColor(Color.BLACK);&#xA;                            // tv_table_sets.setWidth(30);&#xA;&#xA;                        } else {&#xA;                            paramsOfEx.moveToPosition(jj);&#xA;&#xA;&#xA;                            Log.d(LOG_TAG, &quot;ii=&quot; + ii + &quot; jj=&quot; + jj + &quot; param:&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;param&quot;)));&#xA;&#xA;                            tv_table_sets.setText(&quot;&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;param&quot;)) + &quot; (&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;type_par&quot;)) + &quot;)&quot;);&#xA;                            tv_table_sets.setTextColor(Color.BLACK);&#xA;                            //  tv_table_sets.setWidth(160);&#xA;                        }&#xA;&#xA;                        ll_set_item.addView(table_sets_textview);&#xA;&#xA;                        // tv_table_sets.setWidth(30);&#xA;                        rowwidth[jj + 1] = spTrainings.getWidth();&#xA;                        Log.d(LOG_TAG, &quot;rowwidth[jj+1]=&quot; + rowwidth[jj + 1]);&#xA;&#xA;                        table_sets_textview.setId((ii + 2) * 100000 + (jj + 2) * 1000);&#xA;                        tv_table_sets.setId((ii + 2) * 10000 + (jj + 2) * 1000);&#xA;                    }&#xA;                } else {&#xA;                    Sets.moveToPosition(ii);&#xA;                    long set_id = Long.valueOf(Sets.getString(Sets.getColumnIndex(&quot;_id&quot;)));&#xA;&#xA;                    for (jj = -1; jj &lt; paramsCount; jj++) {&#xA;&#xA;                        View table_sets_textview = infl.inflate(R.layout.table_sets_textview, null);&#xA;                        TextView tv_table_sets = (TextView) table_sets_textview.findViewById(R.id.tv_table_sets);&#xA;&#xA;&#xA;                        if (jj == -1) {&#xA;                            tv_table_sets.setText(&quot;&quot; + (ii + 1));&#xA;                            tv_table_sets.setTextColor(Color.BLUE);&#xA;                            //  tv_table_sets.setWidth(30);&#xA;&#xA;&#xA;                        } else&#xA;&#xA;                        {&#xA;                            paramsOfEx.moveToPosition(jj);&#xA;                            long param_id = Long.valueOf(paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;_id&quot;)));&#xA;&#xA;&#xA;                            resultsOfTrainingAndEx = MainActivity.db.getResultsOfSetAndParam(set_id, param_id);&#xA;                            resultsOfTrainingAndEx.moveToFirst();&#xA;&#xA;                       /*     Log.d(LOG_TAG, &quot;******************************************************&quot;);&#xA;                            Log.d(LOG_TAG, &quot;!!!  set_id=&quot; + set_id + &quot; param_id=&quot; + param_id + &quot;SetsOfTraining.id&quot; + Long.valueOf(Sets.getString(Sets.getColumnIndex(&quot;_id&quot;))) + &quot;  getcount&quot; + Sets.getCount());&#xA;                            Log.d(LOG_TAG, &quot; РЕЗУЛЬТАТ &quot; + resultsOfTrainingAndEx.getString(resultsOfTrainingAndEx.getColumnIndex(&quot;res&quot;)));&#xA;&#xA;                            Log.d(LOG_TAG, &quot;!!!  ii=&quot; + ii + &quot; jj=&quot; + jj + &quot; param:&quot; + paramsOfEx.getString(paramsOfEx.getColumnIndex(&quot;param&quot;)));&#xA;                            Log.d(LOG_TAG, &quot;******************************************************&quot;);*/&#xD;&#xA;&#xA;&#xA;                            tv_table_sets.setText(resultsOfTrainingAndEx.getString(resultsOfTrainingAndEx.getColumnIndex(&quot;res&quot;)));&#xA;                            // tv_table_sets.setWidth(15);&#xA;                            //  tv_table_sets.setWidth(160);&#xA;&#xA;                        }&#xA;                        //  tv_table_sets.setWidth(rowwidth[jj+1]);&#xA;                        //  tv_table_sets.setWidth(30);&#xA;                        ll_set_item.addView(table_sets_textview);&#xA;&#xA;                        table_sets_textview.setId((ii + 2) * 100000 + (jj + 2) * 1000);&#xA;                        tv_table_sets.setId((ii + 2) * 10000 + (jj + 2) * 1000);&#xA;&#xA;                    }&#xA;                }&#xA;                ll_parent.addView(set_item);&#xA;                set_item.setId((ii + 2) * 1000000 + (jj + 2) * 1000);&#xA;                ll_set_item.setId((ii + 2) * 100000000);&#xA;&#xA;            }&#xA;                //ll_parent.addView(set_item);&#xA;                 // ll_parent.addView(set_);&#xA;                llExsAndSetsOfTraining.addView(exs_item);&#xA;&#xA;                //  llExsAndSetsOfTraining.addView(set_item);&#xA;&#xA;//                set_item.setId((ii + 2) * 1000000 + (jj + 2) * 1000);&#xA;//                ll_set_item.setId((ii + 2) * 100000000);&#xA;            }&#xA;&#xA;&#xA;&#xA;&#xA;/*            ii = -1;&#xA;            {&#xA;                View set_item = (View) llExsAndSetsOfTraining.findViewById((ii + 2) * 1000000 + (jj + 2) * 1000);&#xA;                LinearLayout ll_set_item = (LinearLayout) set_item.findViewById((ii + 2) * 100000000);&#xA;&#xA;                for (jj = -1; jj &lt; paramsCount; jj++) {&#xA;                    View table_sets_textview = ll_set_item.findViewById((ii + 2) * 100000 + (jj + 2) * 1000);//infl.inflate(R.layout.table_sets_textview, null);&#xA;                    TextView ttt = (TextView) table_sets_textview.findViewById((ii + 2) * 10000 + (jj + 2) * 1000);&#xA;&#xA;//                LinearLayout.LayoutParams pars= (LinearLayout.LayoutParams) ttt.getLayoutParams();&#xA;&#xA;                    rowwidth[jj + 1] = ttt.length() * 10;&#xA;                    ttt.setWidth(rowwidth[jj + 1]);&#xA;                    ttt.setWidth(((spExsOfTraining.getWidth()) / 4) - 5);&#xA;                    Log.d(LOG_TAG, &quot;*************&quot; + rowwidth[jj + 1] + &quot;*****&quot; + spExsOfTraining.getWidth() + &quot;**************&quot; + set_item.getWidth() + &quot;**********************&quot;);&#xA;&#xA;&#xA;                }&#xA;            }&#xA;&#xA;&#xA;            for (ii = 0; ii &lt; setsCount; ii++) {&#xA;                View set_item = getActivity().findViewById((ii + 2) * 1000000 + (jj + 2) * 1000);&#xA;                LinearLayout ll_set_item = (LinearLayout) set_item.findViewById((ii + 2) * 100000000);&#xA;&#xA;                for (jj = -1; jj &lt; paramsCount; jj++) {&#xA;                    View table_sets_textview = ll_set_item.findViewById((ii + 2) * 100000 + (jj + 2) * 1000);&#xA;                    TextView ttt = (TextView) table_sets_textview.findViewById((ii + 2) * 10000 + (jj + 2) * 1000);&#xA;                    ttt.setWidth(rowwidth[jj + 1]);&#xA;                    ttt.setWidth(((spExsOfTraining.getWidth()) / 4) - 5);&#xA;&#xA;&#xA;                }&#xA;            }*/&#xD;&#xA;&#xA;&#xA;        }&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OOnWwNMOEeWGqPW1NAIvyQ" name="id_training" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OOrBINMOEeWGqPW1NAIvyQ" name="ReloadTableTraining" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OOuEcNMOEeWGqPW1NAIvyQ" name="ReloadListExsOfTraining" visibility="public" bodyCondition="_OO2AQNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OO2AQNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OO3OYNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    ExsOfTrainings = MainActivity.db.getExsOfTrainings(id_training);&#xA;&#xA;    lstAdapter = new SimpleCursorAdapter(getActivity(),&#xA;&#xA;            R.layout.simple_list_item_3,&#xA;            ExsOfTrainings,&#xA;            new String[]{&quot;Exercises._id&quot;, &quot;Exercises.name&quot;},&#xA;            new int[]{R.id.text1, R.id.text2});&#xA;&#xA;&#xA;   /* spExsOfTraining.setAdapter(lstAdapter);*/&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OO98ENMOEeWGqPW1NAIvyQ" name="id_training" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OPA_YNMOEeWGqPW1NAIvyQ" name="ReloadListExsOfTraining" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OPEpwNMOEeWGqPW1NAIvyQ" name="ReloadListSetsOfTraining" visibility="public" bodyCondition="_OPHtENMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OPHtENMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OPI7MNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    Sets = MainActivity.db.getSetsOfTraining(id_training, id_exs);&#xA;&#xA;    lstAdapter = new SimpleCursorAdapter(getActivity(),&#xA;&#xA;            android.R.layout.simple_list_item_1,&#xA;            Sets,&#xA;            new String[]{&quot;num&quot;},&#xA;            new int[]{android.R.id.text1});&#xA;&#xA;&#xA;    //  lvSets.setAdapter(lstAdapter);&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OPReENMOEeWGqPW1NAIvyQ" name="id_training" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OPVvgNMOEeWGqPW1NAIvyQ" name="id_exs" type="_N7JBINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OPZZ4NMOEeWGqPW1NAIvyQ" name="ReloadListSetsOfTraining" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_ONA0QNMOEeWGqPW1NAIvyQ" name="SimpleCursorAdapter"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_OPjx8NMOEeWGqPW1NAIvyQ" name="tab3">
+            <ownedComment xmi:id="_OQaGgNMOEeWGqPW1NAIvyQ">
+              <body>Created by Dr.h3cker on 16/03/2015.&#xD;
+</body>
+            </ownedComment>
+            <generalization xmi:id="_OPrtwNMOEeWGqPW1NAIvyQ" general="_OxZTsNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OPvYINMOEeWGqPW1NAIvyQ">
+                <body>tab3 extends Fragment</body>
+              </ownedComment>
+            </generalization>
+            <ownedAttribute xmi:id="_OQC6INMOEeWGqPW1NAIvyQ" name="LOG_TAG" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_OQHyoNMOEeWGqPW1NAIvyQ" name="exlvGroupsExercisesList" visibility="public" type="_OQJn0NMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OQRjoNMOEeWGqPW1NAIvyQ" name="exlvComplexsExs" visibility="public" type="_OQJn0NMOEeWGqPW1NAIvyQ"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_OQ4noNMOEeWGqPW1NAIvyQ" name="MyAdapter" visibility="package">
+              <generalization xmi:id="_ORDmwNMOEeWGqPW1NAIvyQ" general="_O2pnINMOEeWGqPW1NAIvyQ">
+                <ownedComment xmi:id="_ORJtYNMOEeWGqPW1NAIvyQ">
+                  <body>tab3.MyAdapter extends SimpleCursorTreeAdapter</body>
+                </ownedComment>
+              </generalization>
+              <ownedOperation xmi:id="_OR-z0NMOEeWGqPW1NAIvyQ" name="MyAdapter" visibility="public" bodyCondition="_OSHWsNMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_OSHWsNMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_OSIk0NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="                 {&#xA;    super(context, cursor, groupLayout, groupFrom, groupTo,&#xA;            childLayout, childFrom, childTo);&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_OSfxMNMOEeWGqPW1NAIvyQ" name="context" type="_N34RwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OSiNcNMOEeWGqPW1NAIvyQ" name="cursor" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OSqJQNMOEeWGqPW1NAIvyQ" name="groupLayout" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OSyFENMOEeWGqPW1NAIvyQ" name="groupFrom" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OS6A4NMOEeWGqPW1NAIvyQ" name="groupTo" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OTB8sNMOEeWGqPW1NAIvyQ" name="childLayout" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OTLGoNMOEeWGqPW1NAIvyQ" name="childFrom" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OTvuYNMOEeWGqPW1NAIvyQ" name="childTo" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_OT6tgNMOEeWGqPW1NAIvyQ" name="getChildrenCursor" visibility="protected" bodyCondition="_OUDQYNMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_OUDQYNMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_OUEegNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    // получаем курсор по элементам для конкретной группы&#xA;    int idColumn = groupCursor.getColumnIndex(&quot;Mgroups._id&quot;);&#xA;    return MainActivity.db.getExsOfMgroups(groupCursor.getInt(idColumn));&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_OUMaUNMOEeWGqPW1NAIvyQ" name="groupCursor" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OUXZcNMOEeWGqPW1NAIvyQ" name="getChildrenCursor" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+              </ownedOperation>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_OUjmsNMOEeWGqPW1NAIvyQ" name="ComplexesAdapter" visibility="package">
+              <generalization xmi:id="_OUsJkNMOEeWGqPW1NAIvyQ" general="_O2pnINMOEeWGqPW1NAIvyQ">
+                <ownedComment xmi:id="_OUvM4NMOEeWGqPW1NAIvyQ">
+                  <body>tab3.ComplexesAdapter extends SimpleCursorTreeAdapter</body>
+                </ownedComment>
+              </generalization>
+              <ownedOperation xmi:id="_OVNG8NMOEeWGqPW1NAIvyQ" name="ComplexesAdapter" visibility="public" bodyCondition="_OVVp0NMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_OVVp0NMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_OVWQ4NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="                 {&#xA;    super(context, cursor, groupLayout, groupFrom, groupTo,&#xA;            childLayout, childFrom, childTo);&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_OVpy4NMOEeWGqPW1NAIvyQ" name="context" type="_N34RwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OVs2MNMOEeWGqPW1NAIvyQ" name="cursor" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OVwgkNMOEeWGqPW1NAIvyQ" name="groupLayout" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OV0K8NMOEeWGqPW1NAIvyQ" name="groupFrom" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OV4cYNMOEeWGqPW1NAIvyQ" name="groupTo" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OV8t0NMOEeWGqPW1NAIvyQ" name="childLayout" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OWAYMNMOEeWGqPW1NAIvyQ" name="childFrom" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OWFQsNMOEeWGqPW1NAIvyQ" name="childTo" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_OWKwQNMOEeWGqPW1NAIvyQ" name="getChildrenCursor" visibility="protected" bodyCondition="_OWOaoNMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_OWOaoNMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_OWPowNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    // получаем курсор по элементам для конкретной группы&#xA;    int idColumn = groupCursor.getColumnIndex(&quot;Complexes._id&quot;);&#xA;    return MainActivity.db.getExsOfComplexes(groupCursor.getInt(idColumn));&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_OWVvYNMOEeWGqPW1NAIvyQ" name="groupCursor" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OWZZwNMOEeWGqPW1NAIvyQ" name="getChildrenCursor" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+              </ownedOperation>
+            </nestedClassifier>
+            <ownedOperation xmi:id="_OW0QgNMOEeWGqPW1NAIvyQ" name="onCreateView" visibility="public" bodyCondition="_OW364NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OW364NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OW5JANMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    View view =inflater.inflate(R.layout.tab3,container,false);&#xA;&#xA;    exlvComplexsExs = (ExpandableListView) view.findViewById(R.id.exlvComplexsExs);&#xA;&#xA;    exlvGroupsExercisesList = (ExpandableListView) view.findViewById(R.id.exlvGroupsExercisesList);&#xA;&#xA;    ReloadLists();&#xA;&#xA;&#xA;   exlvGroupsExercisesList.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {&#xA;       @Override&#xA;       public boolean onChildClick(ExpandableListView parent, View v,&#xA;                                   int groupPosition, int childPosition, long id) {&#xA;&#xA;           Log.d(LOG_TAG, &quot;ITEM id: &quot; + id + &quot;  child pos:&quot; + childPosition + &quot;   &quot;);&#xA;&#xA;           return true;&#xA;       }&#xA;   });&#xA;&#xA;    exlvGroupsExercisesList.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {&#xA;        @Override&#xA;        public boolean onGroupClick(ExpandableListView expandableListView, View view, int i, long l) {&#xA;&#xA;            Log.d(LOG_TAG, &quot;ITEM id: &quot; + l + &quot;  GROUP pos:&quot; + i + &quot;   &quot;);&#xA;            return false;&#xA;        }&#xA;&#xA;&#xA;    });&#xA;&#xA;&#xA;&#xA;&#xA;    return view;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OXDhENMOEeWGqPW1NAIvyQ" name="inflater" type="_Nx_FINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OXHLcNMOEeWGqPW1NAIvyQ" name="container" type="_NyGZ4NMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OXK10NMOEeWGqPW1NAIvyQ" name="savedInstanceState" type="_NyNuoNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OXN5INMOEeWGqPW1NAIvyQ" name="onCreateView" type="_NunBANMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OXQ8cNMOEeWGqPW1NAIvyQ" name="ReloadLists" visibility="public" bodyCondition="_OXZfUNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OXZfUNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OXatcNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    Cursor cursor = MainActivity.db.getComplexesList();&#xA;    //startManagingCursor(cursor);&#xA;    // сопоставление данных и View для групп&#xA;    String[] groupFrom = { &quot;Complexes.name&quot; };&#xA;    int[] groupTo = { android.R.id.text1 };&#xA;    // сопоставление данных и View для элементов&#xA;    String[] childFrom = { &quot;Exercises.name&quot;};&#xA;    int[] childTo = { android.R.id.text1 };&#xA;&#xA;    // создаем адаптер и настраиваем список&#xA;    SimpleCursorTreeAdapter exlstAdapter = new ComplexesAdapter(MainActivity.db.con, cursor,&#xA;            R.layout.expandable_list_item_parent, groupFrom, //expandable_list_item_parent&#xA;            groupTo,R.layout.list_item_1, childFrom, //expandable_list_item_child&#xA;            childTo);&#xA;&#xA;    exlvComplexsExs.setAdapter(exlstAdapter);&#xA;&#xA;&#xA;    /*************************************************************************************/&#xA;    Cursor cursor1 = MainActivity.db.getMgroupsList();&#xA;    //startManagingCursor(cursor);&#xA;    // сопоставление данных и View для групп&#xA;    String[] groupFrom1 = { &quot;Mgroups.name&quot; };&#xA;    int[] groupTo1 = { android.R.id.text1 };&#xA;    // сопоставление данных и View для элементов&#xA;    String[] childFrom1 = { &quot;Exercises.name&quot;};&#xA;    int[] childTo1 = { android.R.id.text1 };&#xA;&#xA;    // создаем адаптер и настраиваем список&#xA;    SimpleCursorTreeAdapter lstAdapter = new MyAdapter(MainActivity.db.con, cursor1,&#xA;            R.layout.expandable_list_item_parent, groupFrom1, //expandable_list_item_parent&#xA;            groupTo1,R.layout.list_item_1, childFrom1, //expandable_list_item_child&#xA;            childTo1);&#xA;&#xA;    exlvGroupsExercisesList.setAdapter(lstAdapter);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OXeX0NMOEeWGqPW1NAIvyQ" name="ReloadLists" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OQJn0NMOEeWGqPW1NAIvyQ" name="ExpandableListView"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_OXrzMNMOEeWGqPW1NAIvyQ" name="tab4">
+            <ownedComment xmi:id="_OaTpYNMOEeWGqPW1NAIvyQ">
+              <body>Created by Dr.h3cker on 14/03/2015.&#xD;
+</body>
+            </ownedComment>
+            <generalization xmi:id="_OX6csNMOEeWGqPW1NAIvyQ" general="_OxZTsNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OX_VMNMOEeWGqPW1NAIvyQ">
+                <body>tab4 extends Fragment</body>
+              </ownedComment>
+            </generalization>
+            <ownedAttribute xmi:id="_OYqqoNMOEeWGqPW1NAIvyQ" name="LOG_TAG" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_OYvjINMOEeWGqPW1NAIvyQ" name="CM_DELETE_ID" visibility="private" type="_NxeHwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_OY57MNMOEeWGqPW1NAIvyQ" name="CM_EDIT_ID" visibility="private" type="_NxeHwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_OZETQNMOEeWGqPW1NAIvyQ" name="mgroups" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OZOrUNMOEeWGqPW1NAIvyQ" name="params" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OZTj0NMOEeWGqPW1NAIvyQ" name="etNameExercise" visibility="public" type="_OZWnINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OZfKANMOEeWGqPW1NAIvyQ" name="spMgroupChoose" visibility="public" type="_OENdkNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OZqJINMOEeWGqPW1NAIvyQ" name="lvParamsChoose" visibility="public" type="_OEl4ENMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OZ0hMNMOEeWGqPW1NAIvyQ" name="btnAddEx" visibility="public" type="_OFNjINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OZ-SMNMOEeWGqPW1NAIvyQ" name="exlvExerciseslist" visibility="public" type="_OQJn0NMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OaKfcNMOEeWGqPW1NAIvyQ" name="selected_mgroup_id" visibility="public" type="_N7JBINMOEeWGqPW1NAIvyQ"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_OakvINMOEeWGqPW1NAIvyQ" name="MyAdapter" visibility="package">
+              <ownedComment xmi:id="_ObCpMNMOEeWGqPW1NAIvyQ">
+                <body>   @Override&#xD;
+    public boolean onContextItemSelected(MenuItem item) {&#xD;
+&#xD;
+        // получаем инфу о пункте списка&#xD;
+       // AdapterView.AdapterContextMenuInfo info =(AdapterView.AdapterContextMenuInfo) item.getMenuInfo();&#xD;
+&#xD;
+       ExpandableListView.ExpandableListContextMenuInfo info= (ExpandableListView.ExpandableListContextMenuInfo) item.getMenuInfo();&#xD;
+&#xD;
+        Integer idItem = (int) info.id;&#xD;
+        Boolean isGroup = ExpandableListView.getPackedPositionType(info.packedPosition) == ExpandableListView.PACKED_POSITION_TYPE_GROUP;&#xD;
+        Log.d(LOG_TAG, &quot;--- Тип выделенного элемента (true-группа, false-дочерний): --id-&quot; + idItem + &quot; GROUP?&quot; + isGroup);// + acmi.id + &quot;  pos:&quot; + acmi.position);&#xD;
+&#xD;
+&#xD;
+        if (item.getItemId() == 9) {&#xD;
+&#xD;
+           Cursor exs= MainActivity.db.getExsOfId(info.id);&#xD;
+            exs.moveToFirst();&#xD;
+&#xD;
+&#xD;
+            MainActivity.db.delExercise(info.id);&#xD;
+&#xD;
+            Log.d(LOG_TAG, &quot;...Удалено упражнение: &quot; + (exs.getString(exs.getColumnIndex(&quot;name&quot;))) + &quot;  id:&quot; + info.id + &quot;   &quot;);&#xD;
+            Toast toast = Toast.makeText(getContext(), &quot;Удалено упражнение: \&quot;&quot; + (exs.getString(exs.getColumnIndex(&quot;name&quot;)))+&quot;\&quot;&quot;, Toast.LENGTH_SHORT);&#xD;
+            toast.show();&#xD;
+            ReloadLists();&#xD;
+&#xD;
+&#xD;
+            return true;&#xD;
+        } else&#xD;
+&#xD;
+        if (item.getItemId() == 10) {&#xD;
+           // MainActivity.db.addParam(&quot;ffffffff&quot;,&quot;fdfdf&quot;);&#xD;
+            Log.d(LOG_TAG, &quot;--- EDIT EXERCISE --id-&quot; + idItem + &quot; GROUP?&quot; + isGroup);&#xD;
+           //   MainActivity.db.delParam(acmi.id);&#xD;
+            Log.d(LOG_TAG, &quot;...изменено упражнение: &quot; + etNameExercise.getText().toString() + &quot;  id:&quot; + info.id + &quot;   &quot;);&#xD;
+            ;&#xD;
+            ReloadLists();&#xD;
+&#xD;
+          //  exlvExerciseslist.expandGroup((int) info.packedPosition, false); //разворот групп&#xD;
+            Log.d(LOG_TAG, &quot;...изменено упражнение: &quot; + etNameExercise.getText().toString() + &quot;  id:&quot; + info.id + &quot;   &quot;);&#xD;
+            return true;&#xD;
+        }&#xD;
+        return super.onContextItemSelected(item);&#xD;
+    }</body>
+              </ownedComment>
+              <generalization xmi:id="_OaugINMOEeWGqPW1NAIvyQ" general="_O2pnINMOEeWGqPW1NAIvyQ">
+                <ownedComment xmi:id="_OaxjcNMOEeWGqPW1NAIvyQ">
+                  <body>tab4.MyAdapter extends SimpleCursorTreeAdapter</body>
+                </ownedComment>
+              </generalization>
+              <ownedOperation xmi:id="_ObZOgNMOEeWGqPW1NAIvyQ" name="MyAdapter" visibility="public" bodyCondition="_Obdf8NMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_Obdf8NMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_ObeuENMOEeWGqPW1NAIvyQ" name="TemplateBody" value="                 {&#xA;    super(context, cursor, groupLayout, groupFrom, groupTo,&#xA;            childLayout, childFrom, childTo);&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_Ob2hgNMOEeWGqPW1NAIvyQ" name="context" type="_N34RwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_Ob6L4NMOEeWGqPW1NAIvyQ" name="cursor" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_Ob92QNMOEeWGqPW1NAIvyQ" name="groupLayout" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OcA5kNMOEeWGqPW1NAIvyQ" name="groupFrom" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OcD84NMOEeWGqPW1NAIvyQ" name="groupTo" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OcHnQNMOEeWGqPW1NAIvyQ" name="childLayout" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OcLRoNMOEeWGqPW1NAIvyQ" name="childFrom" type="_Nr-jwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OcOU8NMOEeWGqPW1NAIvyQ" name="childTo" type="_NxeHwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_OcTNcNMOEeWGqPW1NAIvyQ" name="getChildrenCursor" visibility="protected" bodyCondition="_OcW30NMOEeWGqPW1NAIvyQ">
+                <ownedRule xmi:id="_OcW30NMOEeWGqPW1NAIvyQ">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_OcYF8NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    // получаем курсор по элементам для конкретной группы&#xA;    int idColumn = groupCursor.getColumnIndex(&quot;Mgroups._id&quot;);&#xA;&#xA;    return MainActivity.db.getExsOfMgroups(groupCursor.getInt(idColumn));&#xA;}&#xD;&#xA;"/>
+                </ownedRule>
+                <ownedParameter xmi:id="_OcgBwNMOEeWGqPW1NAIvyQ" name="groupCursor" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="inout"/>
+                <ownedParameter xmi:id="_OcjFENMOEeWGqPW1NAIvyQ" name="getChildrenCursor" type="_N3kvwNMOEeWGqPW1NAIvyQ" direction="return"/>
+              </ownedOperation>
+            </nestedClassifier>
+            <ownedOperation xmi:id="_Oc-i4NMOEeWGqPW1NAIvyQ" name="ReloadLists" visibility="public" bodyCondition="_OdBmMNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OdI68NMOEeWGqPW1NAIvyQ">
+                <body>private ContextMenu.ContextMenuInfo menuInfo;&#xD;
+Cursor</body>
+              </ownedComment>
+              <ownedRule xmi:id="_OdBmMNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OdCNQNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{  //Cursor&#xA;    mgroups = MainActivity.db.getMgroupsList();&#xA;    //exs=MainActivity.db.getExs;&#xA;&#xA;    //startManagingCursor(cursor);&#xA;    // сопоставление данных и View для групп&#xA;    String[] groupFrom = { &quot;Mgroups.name&quot; };&#xA;    int[] groupTo = { android.R.id.text1 };&#xA;    // сопоставление данных и View для элементов&#xA;    String[] childFrom = { &quot;Exercises.name&quot;};&#xA;    int[] childTo = { android.R.id.text1 };&#xA;&#xA;    // создаем адаптер и настраиваем список&#xA;    SimpleCursorTreeAdapter lstAdapter = new MyAdapter(MainActivity.db.con, mgroups,&#xA;            R.layout.expandable_list_item_parent, groupFrom,&#xA;            groupTo, R.layout.expandable_list_item_child, childFrom,&#xA;            childTo);&#xA;    exlvExerciseslist.setAdapter(lstAdapter);&#xA;&#xA;&#xA;    SpinnerAdapter spinAdapter = new SimpleCursorAdapter(getActivity(),&#xA;            android.R.layout.simple_spinner_dropdown_item,&#xA;            mgroups,&#xA;            new String[] {&quot;name&quot;},&#xA;            new int[] {android.R.id.text1});&#xA;&#xA;    spMgroupChoose.setAdapter(spinAdapter);&#xA;&#xA;&#xA;&#xA;    params=MainActivity.db.getParamsList();&#xA;&#xA;    ListAdapter lst1Adapter = new SimpleCursorAdapter(getActivity(),&#xA;            R.layout.item_cheklist, //android.R.layout.simple_list_item_multiple_choice,&#xA;            params,&#xA;            new String[] {&quot;param&quot;},&#xA;            new int[] {android.R.id.text1});&#xA;    lvParamsChoose.setAdapter(lst1Adapter);&#xA;  lvParamsChoose.setSelection(1);&#xA;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OdGesNMOEeWGqPW1NAIvyQ" name="ReloadLists" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OdKJENMOEeWGqPW1NAIvyQ" name="onCreateView" visibility="public" bodyCondition="_OdNMYNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OdNMYNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OdOagNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="    {&#xA;    final View view=inflater.inflate(R.layout.tab4,container,false);&#xA;&#xA;      //  lvExerciseslist = (ListView) view.findViewById(R.id.lvExercisesList);&#xA;       // lvExerciseslist.setAdapter(MainActivity.db.getExercisesList());&#xA;        btnAddEx=(Button) view.findViewById(R.id.btnAddEx);&#xA;        etNameExercise = (EditText) view.findViewById(R.id.etNameExercise);&#xA;        spMgroupChoose = (Spinner) view.findViewById(R.id.spMgroupChoose);&#xA;        lvParamsChoose = (ListView) view.findViewById(R.id.lvParamsChoose);&#xA;        exlvExerciseslist = (ExpandableListView) view.findViewById(R.id.exlvExercisesList);&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;     //&#xA;        /****************************************************/&#xA;        // создаем обработчик нажатия&#xA;        View.OnClickListener oclBtnOk = new View.OnClickListener() {&#xA;            @Override&#xA;            public void onClick(View v) {&#xA;                MainActivity.db.addExercise(etNameExercise.getText().toString(), spMgroupChoose.getSelectedItemId());&#xA;                Log.d(LOG_TAG, &quot;Added Exercise name : &quot; + etNameExercise.getText().toString() + &quot;  mgroup_id:&quot; + spMgroupChoose.getSelectedItemId() + &quot;   &quot;);&#xA;&#xA;&#xA;&#xA;&#xA;                // btnAddParam.setText(etNameParam.getText());&#xA;&#xA;                SparseBooleanArray checked=lvParamsChoose.getCheckedItemPositions();&#xA;&#xA;                Toast toast = Toast.makeText(getContext(), &quot;Количество выбранных &quot;+lvParamsChoose.getCheckedItemCount(), Toast.LENGTH_SHORT);&#xA;                toast.show();&#xA;                lvParamsChoose = (ListView) view.findViewById(R.id.lvParamsChoose);&#xA;                ReloadLists();&#xA;&#xA;&#xA;            }&#xA;        };&#xA;        // присвоим обработчик кнопке OK (btnOk)&#xA;        btnAddEx.setOnClickListener(oclBtnOk);&#xA;        /****************************************************/&#xA;        ReloadLists();&#xA;&#xA;        registerForContextMenu(exlvExerciseslist);&#xA;       // exlvExerciseslist.setAdapter(MainActivity.db.getExercisesList());&#xA;&#xA;&#xA;        spMgroupChoose.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {&#xA;            public void onItemSelected(AdapterView&lt;?> parent, View itemSelected, int selectedItemPosition, long selectedId) {&#xA;                selected_mgroup_id = selectedId;&#xA;                Log.d(LOG_TAG, &quot;MGROUP SELECTED ITEM id: &quot; + selectedId + &quot;  child pos:&quot; + selectedItemPosition + &quot;   &quot;);&#xA;&#xA;            }&#xA;&#xA;            public void onNothingSelected(AdapterView&lt;?> parent) {&#xA;            }&#xA;        });&#xA;&#xA;&#xA;&#xA;&#xA;/*&#xA;&#xA;        exlvExerciseslist.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {&#xA;            @Override&#xA;            public boolean onChildClick(ExpandableListView parent, View v,&#xA;                                        int groupPosition, int childPosition, long id) {&#xA;                Log.d(LOG_TAG, &quot;ITEM id: &quot; + id + &quot;  child pos:&quot; + childPosition + &quot;   &quot;);&#xA;&#xA;&#xA;            return true;&#xA;            }&#xA;        });&#xA;*/&#xD;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;        return  view;&#xA;    }&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OdYLgNMOEeWGqPW1NAIvyQ" name="inflater" type="_Nx_FINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_Odcc8NMOEeWGqPW1NAIvyQ" name="container" type="_NyGZ4NMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OdguYNMOEeWGqPW1NAIvyQ" name="savedInstanceState" type="_NyNuoNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_Od1egNMOEeWGqPW1NAIvyQ" name="onCreateView" type="_NunBANMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Od9aUNMOEeWGqPW1NAIvyQ" name="onCreateContextMenu" visibility="public" bodyCondition="_OePuMNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OePuMNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OeRjYNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    ExpandableListView.ExpandableListContextMenuInfo info= ( ExpandableListView.ExpandableListContextMenuInfo) menuInfo;&#xA;    Log.d(LOG_TAG, &quot;------ Тип выделенного элемента (1-дочерний, 0-группа):&quot; + info.id + &quot; GROUP?&quot; + ExpandableListView.getPackedPositionType(info.packedPosition));// + acmi.id + &quot;  pos:&quot; + acmi.position);&#xA;  if (ExpandableListView.getPackedPositionType(info.packedPosition)!=0)//если элемент НЕ родительский&#xA;  {&#xA;      super.onCreateContextMenu(menu, v, menuInfo);&#xA;  //    this.menuInfo = menuInfo;&#xA;&#xA;&#xA;      //String keyword = o.toString();&#xA;&#xA;     // exs.moveToPosition(0);//исправить курсоры&#xA;      Cursor exs=MainActivity.db.getExsOfId(info.id);&#xA;      exs.moveToFirst();&#xA;&#xA;      menu.setHeaderTitle(exs.getString(exs.getColumnIndex(&quot;name&quot;)));&#xA;      menu.add(0, CM_DELETE_ID, 0, &quot;Удалить упражнение&quot;);&#xA;      menu.add(0, CM_EDIT_ID, 0, &quot;Изменить упражнение&quot;);&#xA;      menu.getItem(0).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {&#xA;          @Override&#xA;          public boolean onMenuItemClick(MenuItem item) {&#xA;              ExpandableListView.ExpandableListContextMenuInfo info= (ExpandableListView.ExpandableListContextMenuInfo) item.getMenuInfo();&#xA;&#xA;              Integer idItem = (int) info.id;&#xA;              Boolean isGroup = ExpandableListView.getPackedPositionType(info.packedPosition) == ExpandableListView.PACKED_POSITION_TYPE_GROUP;&#xA;              Log.d(LOG_TAG, &quot;--- Тип выделенного элемента (true-группа, false-дочерний): --id-&quot; + idItem + &quot; GROUP?&quot; + isGroup);// + acmi.id + &quot;  pos:&quot; + acmi.position);&#xA;&#xA;                  Cursor exs= MainActivity.db.getExsOfId(info.id);&#xA;                  exs.moveToFirst();&#xA;&#xA;&#xA;                  MainActivity.db.delExercise(info.id);&#xA;&#xA;                  Log.d(LOG_TAG, &quot;...Удалено упражнение: &quot; + (exs.getString(exs.getColumnIndex(&quot;name&quot;))) + &quot;  id:&quot; + info.id + &quot;   &quot;);&#xA;                  Toast toast = Toast.makeText(getContext(), &quot;Удалено упражнение: \&quot;&quot; + (exs.getString(exs.getColumnIndex(&quot;name&quot;)))+&quot;\&quot;&quot;, Toast.LENGTH_SHORT);&#xA;                  toast.show();&#xA;                  ReloadLists();&#xA;&#xA;&#xA;                  return true;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;          }&#xA;      });&#xA;&#xA;      Log.d(LOG_TAG, &quot;MGROUP CONTEXT MENU ITEM id: &quot; + info.id + &quot;  child pos:&quot; + info.packedPosition + &quot;   &quot;+exs.getString(exs.getColumnIndex(&quot;name&quot;)));&#xA;  }&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_Oegz8NMOEeWGqPW1NAIvyQ" name="menu" type="_OelscNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OenhoNMOEeWGqPW1NAIvyQ" name="v" type="_NunBANMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OexSoNMOEeWGqPW1NAIvyQ" name="menuInfo" type="_Oe840NMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_Oe_VENMOEeWGqPW1NAIvyQ" name="onCreateContextMenu" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OZWnINMOEeWGqPW1NAIvyQ" name="EditText"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_OelscNMOEeWGqPW1NAIvyQ" name="ContextMenu"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Oe840NMOEeWGqPW1NAIvyQ" name="ContextMenu.ContextMenuInfo"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_OfQa0NMOEeWGqPW1NAIvyQ" name="tab5">
+            <ownedComment xmi:id="_OhAHQNMOEeWGqPW1NAIvyQ">
+              <body>Created by Dr.h3cker on 14/03/2015.&#xD;
+</body>
+            </ownedComment>
+            <generalization xmi:id="_OfaL0NMOEeWGqPW1NAIvyQ" general="_OxZTsNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OffrYNMOEeWGqPW1NAIvyQ">
+                <body>tab5 extends Fragment</body>
+              </ownedComment>
+            </generalization>
+            <ownedAttribute xmi:id="_OgB24NMOEeWGqPW1NAIvyQ" name="CM_DELETE_ID" visibility="private" type="_NxeHwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_OgIkkNMOEeWGqPW1NAIvyQ" name="CM_EDIT_ID" visibility="private" type="_NxeHwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_OgM2ANMOEeWGqPW1NAIvyQ" name="LOG_TAG" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_OgRugNMOEeWGqPW1NAIvyQ" name="lvMgroupslist" visibility="private" type="_OEl4ENMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_Ogd7wNMOEeWGqPW1NAIvyQ" name="etNameNewMgroup" visibility="public" type="_OZWnINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OgqwENMOEeWGqPW1NAIvyQ" name="btnAddMgroup" visibility="public" type="_OFNjINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_Og5ZkNMOEeWGqPW1NAIvyQ" name="mgroups" visibility="private" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedOperation xmi:id="_Ohl9INMOEeWGqPW1NAIvyQ" name="onCreateView" visibility="public" bodyCondition="_OhtR4NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OhtR4NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OhvuINMOEeWGqPW1NAIvyQ" name="TemplateBody" value="    {&#xA;View view=inflater.inflate(R.layout.tab5,container,false);&#xA;&#xA;&#xA;&#xA;        lvMgroupslist = (ListView) view.findViewById(R.id.lvMgroupsList);&#xA;        etNameNewMgroup=(EditText) view.findViewById(R.id.etNameNewMgroup);&#xA;        btnAddMgroup=(Button) view.findViewById(R.id.btnAddMgroup);&#xA;        ReloadMgroups();&#xA;&#xA;        registerForContextMenu(lvMgroupslist);&#xA;&#xA;        etNameNewMgroup.setOnFocusChangeListener(new View.OnFocusChangeListener() {&#xA;            @Override&#xA;            public void onFocusChange(View v, boolean hasFocus) {&#xA;                etNameNewMgroup.setText(&quot;&quot;);&#xA;            }&#xA;        });&#xA;&#xA;&#xA;        btnAddMgroup.setOnClickListener(new View.OnClickListener() {&#xA;            @Override&#xA;            public void onClick(View v) {&#xA;&#xA;&#xA;                if (etNameNewMgroup.getText().toString().equals(&quot;&quot;)) {&#xA;                    Log.d(LOG_TAG, &quot;pustaya stroka^^&quot; + etNameNewMgroup.getText().toString().equals(&quot;&quot;));&#xA;                    Log.d(LOG_TAG, &quot;stroka[&quot; + etNameNewMgroup.getText().toString() + &quot;]&quot;);&#xA;                    Toast toast = Toast.makeText(getContext(), &quot;Введите название мышечной группы!&quot;, Toast.LENGTH_SHORT);&#xA;                    toast.show();&#xA;&#xA;&#xA;                } else {&#xA;                    Log.d(LOG_TAG, &quot;nepustaya stroka^^&quot; + etNameNewMgroup.getText().toString().equals(&quot;&quot;));&#xA;                    Log.d(LOG_TAG, &quot;stroka[&quot; + etNameNewMgroup.getText().toString() + &quot;]&quot;);&#xA;&#xA;                    Toast toast = Toast.makeText(getContext(), &quot;Мышечная группа &quot;&#xA;                            + etNameNewMgroup.getText().toString()&#xA;                            + &quot; добавлена&quot;, Toast.LENGTH_SHORT);&#xA;                    toast.show();&#xA;                    MainActivity.db.addMgroup(etNameNewMgroup.getText().toString());&#xA;&#xA;                    ReloadMgroups();&#xA;                }&#xA;&#xA;            }&#xA;&#xA;&#xA;        });&#xA;&#xA;        return  view;&#xA;    }&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_Oh-XoNMOEeWGqPW1NAIvyQ" name="inflater" type="_Nx_FINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OiDQINMOEeWGqPW1NAIvyQ" name="container" type="_NyGZ4NMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OiHhkNMOEeWGqPW1NAIvyQ" name="savedInstanceState" type="_NyNuoNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OiLL8NMOEeWGqPW1NAIvyQ" name="onCreateView" type="_NunBANMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OiO2UNMOEeWGqPW1NAIvyQ" name="onCreateContextMenu" visibility="public" bodyCondition="_OiSgsNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OiSgsNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OiUV4NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="                                {&#xA;    super.onCreateContextMenu(menu, v, menuInfo);&#xA;&#xA;&#xA;    mgroups.moveToPosition(((AdapterView.AdapterContextMenuInfo) menuInfo).position);&#xA;    Log.d(LOG_TAG, &quot;...!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&quot;);&#xA;    Log.d(LOG_TAG, &quot;--- MENU from Mgroups:&quot; + mgroups.getString(mgroups.getColumnIndex(&quot;name&quot;)) + &quot; --position-&quot; + ((AdapterView.AdapterContextMenuInfo) menuInfo).position + &quot;  id:&quot; + ((AdapterView.AdapterContextMenuInfo) menuInfo).id);&#xA;&#xA;    menu.setHeaderTitle(mgroups.getString(mgroups.getColumnIndex(&quot;name&quot;)));&#xA;    menu.add(0, CM_DELETE_ID, 0, &quot;Удалить мышечную группу&quot;);&#xA;    menu.add(0, CM_EDIT_ID, 0, &quot;Изменить мышечную группу&quot;);&#xA;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_Oii_YNMOEeWGqPW1NAIvyQ" name="menu" type="_OelscNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OimpwNMOEeWGqPW1NAIvyQ" name="v" type="_NunBANMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_Oiq7MNMOEeWGqPW1NAIvyQ" name="menuInfo" type="_Oe840NMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OivMoNMOEeWGqPW1NAIvyQ" name="onCreateContextMenu" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Oixo4NMOEeWGqPW1NAIvyQ" name="onContextItemSelected" visibility="public" bodyCondition="_Oi7Z4NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_Oi7Z4NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_Oi8oANMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    Log.d(LOG_TAG, &quot;...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx!&quot;);&#xA;  AdapterView.AdapterContextMenuInfo info =(AdapterView.AdapterContextMenuInfo) item.getMenuInfo();&#xA;  //  ContextMenu.ContextMenuInfo info=(ContextMenu.ContextMenuInfo) item.getMenuInfo();&#xA;&#xA;    mgroups.moveToPosition(info.position);&#xA;&#xA;    if (item.getItemId() == 3) {&#xA;&#xA;        MainActivity.db.delMgroup(info.id);&#xA;&#xA;         Log.d(LOG_TAG, &quot;...Удалена мышечная группа &quot; +mgroups.getString(mgroups.getColumnIndex(&quot;name&quot;)));&#xA;        Toast toast = Toast.makeText(getContext(), &quot;Удалена мышечная группа: \&quot;&quot;+mgroups.getString(mgroups.getColumnIndex(&quot;name&quot;))+&quot;\&quot;&quot;, Toast.LENGTH_SHORT); //&quot; + mgroups.getString(mgroups.getColumnIndex(&quot;name&quot;))+&quot;\&quot;&quot;, Toast.LENGTH_SHORT);&#xA;       toast.show();&#xA;       ReloadMgroups();&#xA;&#xA;        return true;&#xA;    } else&#xA;&#xA;    if (item.getItemId() == 4) {&#xA;        // MainActivity.db.addParam(&quot;ffffffff&quot;,&quot;fdfdf&quot;);&#xA;    //    Log.d(LOG_TAG, &quot;--- EDIT EXERCISE --id-&quot; + idItem + &quot; GROUP?&quot; + isGroup);&#xA;        //   MainActivity.db.delParam(acmi.id);&#xA;     //     Log.d(LOG_TAG, &quot;...изменено упражнение: &quot; + etNameExercise.getText().toString() + &quot;  id:&quot; + info.id + &quot;   &quot;);&#xA;        ;&#xA;    //    ReloadLists();&#xA;&#xA;        //  exlvExerciseslist.expandGroup((int) info.packedPosition, false); //разворот групп&#xA;     //   Log.d(LOG_TAG, &quot;...изменено упражнение: &quot; + etNameExercise.getText().toString() + &quot;  id:&quot; + info.id + &quot;   &quot;);*//*&#xA;        return true;&#xA;    }&#xA;&#xA;&#xA;    return super.onContextItemSelected(item);&#xA;    }&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OjEj0NMOEeWGqPW1NAIvyQ" name="item" type="_N2mfYNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OjIOMNMOEeWGqPW1NAIvyQ" name="onContextItemSelected" type="_N2P6ENMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OjL4kNMOEeWGqPW1NAIvyQ" name="ReloadMgroups" visibility="public" bodyCondition="_OjWQoNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OjWQoNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OjZT8NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;     mgroups= MainActivity.db.getMgroupsList();&#xA;&#xA;    ListAdapter lstAdapter = new SimpleCursorAdapter(getActivity(),&#xA;            R.layout.list_item_1,&#xA;            mgroups,&#xA;            new String[] {&quot;name&quot;},&#xA;            new int[] {android.R.id.text1});&#xA;    lvMgroupslist.setAdapter(lstAdapter);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OjezgNMOEeWGqPW1NAIvyQ" name="ReloadMgroups" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Ojrn0NMOEeWGqPW1NAIvyQ" name="tab6">
+            <ownedComment xmi:id="_OmKUENMOEeWGqPW1NAIvyQ">
+              <body>Created by Dr.h3cker on 14/03/2015.&#xD;
+</body>
+            </ownedComment>
+            <generalization xmi:id="_Oj5DMNMOEeWGqPW1NAIvyQ" general="_OxZTsNMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_Oj-iwNMOEeWGqPW1NAIvyQ">
+                <body>tab6 extends Fragment</body>
+              </ownedComment>
+            </generalization>
+            <ownedAttribute xmi:id="_Ok1eYNMOEeWGqPW1NAIvyQ" name="LOG_TAG" visibility="package" type="_Nr-jwNMOEeWGqPW1NAIvyQ" isReadOnly="true"/>
+            <ownedAttribute xmi:id="_Ok8MENMOEeWGqPW1NAIvyQ" name="CM_DELETE_ID" visibility="private" type="_NxeHwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OlAdgNMOEeWGqPW1NAIvyQ" name="CM_EDIT_ID" visibility="private" type="_NxeHwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OlHLMNMOEeWGqPW1NAIvyQ" name="lvParamList" visibility="private" type="_OEl4ENMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OlSKUNMOEeWGqPW1NAIvyQ" name="btnAddParam" visibility="private" type="_OFNjINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OlciYNMOEeWGqPW1NAIvyQ" name="params" visibility="package" type="_N3kvwNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OliB8NMOEeWGqPW1NAIvyQ" name="etNameParam" visibility="private" type="_OZWnINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_OlrL4NMOEeWGqPW1NAIvyQ" name="etTypeParam" visibility="private" type="_OZWnINMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_Ol0V0NMOEeWGqPW1NAIvyQ" name="spTypeParam" visibility="private" type="_OENdkNMOEeWGqPW1NAIvyQ"/>
+            <ownedAttribute xmi:id="_Ol-t4NMOEeWGqPW1NAIvyQ" name="spNameParam" visibility="private" type="_OENdkNMOEeWGqPW1NAIvyQ"/>
+            <ownedOperation xmi:id="_OmiukNMOEeWGqPW1NAIvyQ" name="ReloadLists" visibility="public" bodyCondition="_Omlx4NMOEeWGqPW1NAIvyQ">
+              <ownedComment xmi:id="_OmttsNMOEeWGqPW1NAIvyQ">
+                <body> private View v;</body>
+              </ownedComment>
+              <ownedRule xmi:id="_Omlx4NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OmnAANMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{    params= MainActivity.db.getParamsList();&#xA;&#xA;&#xA;    ListAdapter lstAdapter = new SimpleCursorAdapter(getActivity(),&#xA;        R.layout.list_item_1,&#xA;        params,&#xA;        new String[] {&quot;param&quot;,&quot;type_par&quot;},&#xA;        new int[] {android.R.id.text1,android.R.id.text2});&#xA;      lvParamList.setAdapter(lstAdapter);&#xA;&#xA;&#xA;    String[] param_names =&#xA;            {&quot;длительность&quot;,&quot;дистанция&quot;,&quot;вес&quot;,&quot;повторения&quot;, &quot;повторения (прав)&quot;,&quot;повторения (лев)&quot;};&#xA;    // создаем адаптер&#xA;    ArrayAdapter&lt;String> adapter = new ArrayAdapter&lt;String>(getActivity(),&#xA;            android.R.layout.simple_list_item_1, param_names);&#xA;&#xA;    spNameParam.setAdapter(adapter);&#xA;&#xA;&#xA;&#xA;    String[] meri =&#xA;            { &quot;кг.&quot;,&#xA;            &quot;анг.фунты&quot;,&#xA;            &quot;сек.&quot;,&#xA;            &quot;мин.&quot;,&#xA;            &quot;часы&quot;,&#xA;            &quot;км.&quot;,&#xA;            &quot;мили&quot;,&#xA;            &quot;раз(а)&quot;};&#xA;    // создаем адаптер&#xA;    ArrayAdapter&lt;String> adapter1 = new ArrayAdapter&lt;String>(getActivity(),&#xA;            android.R.layout.simple_list_item_1, meri);&#xA;&#xA;    spTypeParam.setAdapter(adapter1);&#xA;&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OmrRcNMOEeWGqPW1NAIvyQ" name="ReloadLists" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Omu70NMOEeWGqPW1NAIvyQ" name="onCreateView" visibility="public" bodyCondition="_Omx_INMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_Omx_INMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OmzNQNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;&#xA;    final View view=inflater.inflate(R.layout.tab6, container,false);&#xA;  /*final*/// View  view=ContentFragment.rv6;&#xA;   // view.setAlpha(MainActivity.alpha_bg);&#xA;    Log.d(MainActivity.LOG_TAG, &quot;createview&quot;);&#xA;    //v=view;&#xA;    lvParamList = (ListView) view.findViewById(R.id.lvParamList);&#xA;    registerForContextMenu(lvParamList);&#xA;&#xA;   // etNameParam=(EditText) view.findViewById(R.id.etNameParam);&#xA;  //  etTypeParam=(EditText) view.findViewById(R.id.etTypeParam);&#xA;    spNameParam=(Spinner) view.findViewById(R.id.spNameParam);&#xA;    spTypeParam=(Spinner) view.findViewById(R.id.spTypeParam);&#xA;&#xA;    btnAddParam=(Button) view.findViewById(R.id.btnAddParam);&#xA;&#xA;&#xA;&#xA;    /****************************************************/&#xA;    // создаем обработчик нажатия&#xA;    View.OnClickListener oclBtnOk = new View.OnClickListener() {&#xA;        @Override&#xA;        public void onClick(View v) {&#xA;            Log.d(LOG_TAG, &quot;type id: &quot; + spTypeParam.getSelectedItem() + &quot;   &quot;);&#xA;&#xA;&#xA;            MainActivity.db.addParam(spNameParam.getSelectedItem().toString(), spTypeParam.getSelectedItem().toString());&#xA;           ReloadLists();&#xA;           // btnAddParam.setText(etNameParam.getText());&#xA;        }&#xA;    };&#xA;    // присвоим обработчик кнопке OK (btnOk)&#xA;    btnAddParam.setOnClickListener(oclBtnOk);&#xA;    /****************************************************/&#xA;&#xA;&#xA;&#xA;  //  spTypeParam.setAdapter(MainActivity.db.getParamsList());&#xA;   ReloadLists();&#xA;&#xA;/*    lvParamList.setOnItemClickListener(&#xA;            new AdapterView.OnItemClickListener() {&#xA;                public void onItemClick(AdapterView&lt;?> a, View v, int position, long id)&#xA;                {&#xA;                    Log.d(LOG_TAG, &quot;ITEM id: &quot; + id + &quot;   pos:&quot; + position + &quot;   &quot;);&#xA;&#xA;                }&#xA;            }&#xA;&#xA;    );*/&#xD;&#xA;&#xA;&#xA;&#xA;    return  view;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_Om-zcNMOEeWGqPW1NAIvyQ" name="inflater" type="_Nx_FINMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OnBPsNMOEeWGqPW1NAIvyQ" name="container" type="_NyGZ4NMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OnDr8NMOEeWGqPW1NAIvyQ" name="savedInstanceState" type="_NyNuoNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OnGvQNMOEeWGqPW1NAIvyQ" name="onCreateView" type="_NunBANMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_OnJLgNMOEeWGqPW1NAIvyQ" name="onCreateContextMenu" visibility="public" bodyCondition="_OnMO0NMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OnMO0NMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OnM14NMOEeWGqPW1NAIvyQ" name="TemplateBody" value="                                {&#xA;    getActivity().onCreateContextMenu(menu, v, menuInfo);&#xA;&#xA;&#xA;    params.moveToPosition(((AdapterView.AdapterContextMenuInfo) menuInfo).position);&#xA;&#xA;    Log.d(LOG_TAG, &quot;--- MENU from PARAMS:&quot; + params.getString(params.getColumnIndex(&quot;param&quot;)) + &quot; --position-&quot; + ((AdapterView.AdapterContextMenuInfo) menuInfo).position + &quot;  id:&quot; + ((AdapterView.AdapterContextMenuInfo) menuInfo).id);&#xA;&#xA;    menu.setHeaderTitle(params.getString(params.getColumnIndex(&quot;param&quot;)));&#xA; //   menu.add(0, CM_DELETE_ID, 0, &quot;Удалить параметр&quot;);&#xA;  //  menu.add(0, CM_EDIT_ID, 0, &quot;Изменить параметр&quot;);&#xA;&#xA;    menu.add(0, CM_DELETE_ID, 0, &quot;Удалить параметр&quot;);&#xA;    menu.add(0, CM_EDIT_ID, 0, &quot;Изменить параметр&quot;);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OnVYwNMOEeWGqPW1NAIvyQ" name="menu" type="_OelscNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OndUkNMOEeWGqPW1NAIvyQ" name="v" type="_NunBANMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_OnhmANMOEeWGqPW1NAIvyQ" name="menuInfo" type="_Oe840NMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_Onl3cNMOEeWGqPW1NAIvyQ" name="onCreateContextMenu" type="_N0JoUNMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Onph0NMOEeWGqPW1NAIvyQ" name="onContextItemSelected" visibility="public" bodyCondition="_OntzQNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OntzQNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OnvBYNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    if (item.getItemId() == 1) {&#xA;        // получаем инфу о пункте списка&#xA;        AdapterView.AdapterContextMenuInfo acmi = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();&#xA;        // удаляем Map из коллекции, используя позицию пункта в списке&#xA;       // MainActivity.db.addParam(&quot;ffffffff&quot;,&quot;fdfdf&quot;);&#xA;        Log.d(LOG_TAG, &quot;--- Delete from PARAMS: --id-&quot; + acmi.id + &quot;  pos:&quot; + acmi.position);&#xA;        MainActivity.db.delParam(acmi.id);&#xA;&#xA;       ReloadLists();&#xA;        return true;&#xA;    } else&#xA;&#xA;        if (item.getItemId() == 2) {&#xA;            // получаем инфу о пункте списка&#xA;            AdapterView.AdapterContextMenuInfo acmi = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();&#xA;            // удаляем Map из коллекции, используя позицию пункта в списке&#xA;            // MainActivity.db.addParam(&quot;ffffffff&quot;,&quot;fdfdf&quot;);&#xA;            Log.d(LOG_TAG, &quot;--- EDIT --id-&quot; + acmi.id + &quot;  pos:&quot; + acmi.position);&#xA;         //   MainActivity.db.delParam(acmi.id);&#xA;&#xA;&#xA;            ReloadLists();&#xA;            return true;&#xA;        }&#xA;   return super.onContextItemSelected(item);&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_On1vENMOEeWGqPW1NAIvyQ" name="item" type="_N2mfYNMOEeWGqPW1NAIvyQ" direction="inout"/>
+              <ownedParameter xmi:id="_On5ZcNMOEeWGqPW1NAIvyQ" name="onContextItemSelected" type="_N2P6ENMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_On8cwNMOEeWGqPW1NAIvyQ" name="getView" visibility="public" bodyCondition="_OoE_oNMOEeWGqPW1NAIvyQ">
+              <ownedRule xmi:id="_OoE_oNMOEeWGqPW1NAIvyQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_OoGNwNMOEeWGqPW1NAIvyQ" name="TemplateBody" value="{&#xA;    Log.d(MainActivity.LOG_TAG, &quot;getview6&quot;);&#xA;    Log.d(MainActivity.LOG_TAG, super.getView().toString());&#xA;    return super.getView();&#xA;&#xA;}&#xD;&#xA;"/>
+              </ownedRule>
+              <ownedParameter xmi:id="_OoKfMNMOEeWGqPW1NAIvyQ" name="getView" type="_NunBANMOEeWGqPW1NAIvyQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_OpGTUNMOEeWGqPW1NAIvyQ" name="readystatesoftware">
+      <packagedElement xmi:type="uml:Package" xmi:id="_OqKqUNMOEeWGqPW1NAIvyQ" name="sqliteasset">
+        <packagedElement xmi:type="uml:Class" xmi:id="_OqidwNMOEeWGqPW1NAIvyQ" name="SQLiteAssetHelper">
+          <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_OrLW8NMOEeWGqPW1NAIvyQ" name="Unresolved Class"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_OsFV4NMOEeWGqPW1NAIvyQ" name="android">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Otu7sNMOEeWGqPW1NAIvyQ" name="support">
+      <packagedElement xmi:type="uml:Package" xmi:id="_OvUQENMOEeWGqPW1NAIvyQ" name="v4">
+        <packagedElement xmi:type="uml:Package" xmi:id="_OwvzcNMOEeWGqPW1NAIvyQ" name="app">
+          <packagedElement xmi:type="uml:Class" xmi:id="_OxZTsNMOEeWGqPW1NAIvyQ" name="Fragment">
+            <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_OyDbANMOEeWGqPW1NAIvyQ" name="Unresolved Class"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_OyFQMNMOEeWGqPW1NAIvyQ" name="FragmentPagerAdapter">
+            <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_OylmgNMOEeWGqPW1NAIvyQ" name="Unresolved Class"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OzovYNMOEeWGqPW1NAIvyQ" name="v7">
+        <packagedElement xmi:type="uml:Package" xmi:id="_O0fD8NMOEeWGqPW1NAIvyQ" name="app">
+          <packagedElement xmi:type="uml:Class" xmi:id="_O01pQNMOEeWGqPW1NAIvyQ" name="AppCompatActivity">
+            <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_O1dUUNMOEeWGqPW1NAIvyQ" name="Unresolved Class"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_O2SawNMOEeWGqPW1NAIvyQ" name="widget">
+      <packagedElement xmi:type="uml:Class" xmi:id="_O2pnINMOEeWGqPW1NAIvyQ" name="SimpleCursorTreeAdapter">
+        <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_O3MZsNMOEeWGqPW1NAIvyQ" name="Unresolved Class"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
